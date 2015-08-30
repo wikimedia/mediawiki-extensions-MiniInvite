@@ -137,10 +137,6 @@
 	padding: 0px 5px 0px 5px;
 }
 
-.cleared {
-	clear: both;
-}
-
 form[name="email"] {
 	margin: 0px;
 }

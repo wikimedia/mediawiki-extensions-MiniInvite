@@ -1,11 +1,4 @@
 <?php
-/**
- * Protect against register_globals vulnerabilities.
- * This line must be present before any global variable is referenced.
- */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( "This file is an extension to the MediaWiki software and is not a valid access point.\n" );
-}
 
 $wgHooks['PageContentSaveComplete'][] = 'wfInviteFriendToEdit';
 $wgHooks['PageContentInsertComplete'][] = 'wfCreateOpinionCheck';

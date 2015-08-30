@@ -244,7 +244,7 @@ class InviteEmail extends UnlistedSpecialPage {
 							$this->msg( 'invite-customize-send' )->text() . '" />
 					</div>
 				</div>
-				<div class="cleared"></div>
+				<div class="visualClear"></div>
 				<input type="hidden" value="' . htmlspecialchars( $this->page, ENT_QUOTES ) . '" name="page_title" />
 			</form>';
 

@@ -17,10 +17,6 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( "This is not a valid entry point.\n" );
-}
-
 // Extension credits that show up on Special:Version
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
@@ -42,21 +38,20 @@ $wgAutoloadClasses['EmailNewArticle'] = __DIR__ . '/SpecialEmailNewArticle.php';
 $wgSpecialPages['EmailNewArticle'] = 'EmailNewArticle';
 
 // Load the hooked functions
-require_once( 'InviteFriendOnEdit.php' );
+require_once 'InviteFriendOnEdit.php';
 
 // ResourceLoader support for MediaWiki 1.17+
-$resourceTemplate = array(
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'MiniInvite'
-);
-
-$wgResourceModules['ext.miniInvite.css'] = $resourceTemplate + array(
+$wgResourceModules['ext.miniInvite.css'] = array(
 	'styles' => 'resources/css/invite.css',
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'MiniInvite',
 	'position' => 'top'
 );
 
-$wgResourceModules['ext.miniInvite.emailNewArticle.css'] = $resourceTemplate + array(
+$wgResourceModules['ext.miniInvite.emailNewArticle.css'] = array(
 	'styles' => 'resources/css/EmailNewArticle.css',
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'MiniInvite',
 	'position' => 'top'
 );
 
