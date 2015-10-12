@@ -29,7 +29,7 @@
 	"invite-friendsname": "Friend's Name",
 	"invite-emailaddr": "Email",
 	"invite-yourcontacts": "Your contacts",
-	"invite-sharefriends": "Share {{SITENAME}} with your friends.  They will thank you. The more friends you invite, the less bored you will be.",
+	"invite-sharefriends": "Share {{SITENAME}} with your friends. They will thank you. The more friends you invite, the less bored you will be.",
 	"invite-getcontactsmaintitle": "{{SITENAME}} is more fun with your friends. Invite all of them. Enter your e-mail and password below to load your contacts. <br /><b>We are serious about keeping your private information private. We do not store the e-mail address or password provided to us.</b>",
 	"invite-msg-sent": "Messages Sent!",
 	"invite-share-article": "Share Your Article With Your Friends!",
