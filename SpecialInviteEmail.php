@@ -57,8 +57,10 @@ class InviteEmail extends UnlistedSpecialPage {
 						new MailAddress( $this->from ),
 						$subject,
 						$message,
-						new MailAddress( $this->from ),
-						'text/html; charset=UTF-8'
+						array(
+							'replyTo' => new MailAddress( $this->from ),
+							'contentType' => 'text/html; charset=UTF-8'
+						)
 					);
 				}
 			}
