@@ -92,9 +92,10 @@ class MiniInviteHooks {
 		$pageId = ( $wikiPage->getID() !== null ) ? $wikiPage->getID() : 0;
 		$page_edits_views = $edits_views[$pageId];
 
+		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
+
 		if ( $page_edits_views == 1 && $user->isLoggedIn() ) {
-			$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
-			$s .= '<span id="invite_to_edit" class="edit" style="display:none; background-color:#FFFB9B">';
+			$s .= '<span id="invite_to_edit" class="edit">';
 			$s .= Linker::link(
 				$invite_title,
 				wfMessage( 'invite-friend-to-edit' )->plain(),
@@ -109,8 +110,7 @@ class MiniInviteHooks {
 		// This was originally commented out, but I have no idea why...
 		// Oh, maybe it conflicts with wfInviteRedirect()? Not sure, @todo CHECKME
 		if ( isset( $_SESSION['new_opinion'] ) && $_SESSION['new_opinion'] == 1 ) {
-			$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
-			$s .= '<span id="invite_to_read" class="edit" style="display:none; background-color:#FFFB9B">';
+			$s .= '<span id="invite_to_read" class="edit">';
 			$s .= Linker::link(
 				$invite_title,
 				wfMessage( 'invite-friend-to-read' )->plain(),
@@ -123,6 +123,7 @@ class MiniInviteHooks {
 
 		if ( !empty( $s ) ) {
 			$out->addModules( 'ext.miniInvite.DisplayInviteLinks.js' );
+			$out->addModuleStyles( 'ext.miniInvite.inviteLinks.css' );
 			// Output the HTML. addHTML() places it at the very beginning of the
 			// page, which is where we want it; appending to $text places it at the
 			// very *bottom* of the page, which is what we do *not* want.

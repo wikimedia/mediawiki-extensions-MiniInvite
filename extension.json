@@ -56,6 +56,10 @@
 			"styles": "resources/css/EmailNewArticle.css",
 			"position": "top"
 		},
+		"ext.miniInvite.inviteLinks.css": {
+			"styles": "resources/css/InviteLinks.css",
+			"position": "top"
+		},
 		"ext.miniInvite.DisplayInviteLinks.js": {
 			"scripts": "resources/js/DisplayInviteLinks.js",
 			"position": "bottom"

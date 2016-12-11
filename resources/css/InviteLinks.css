@@ -1,0 +1,5 @@
+/* See MiniInviteHooks::displayInviteLinks() */
+#invite_to_edit, #invite_to_read {
+	background-color: #FFFB9B;
+	display: none;
+}
