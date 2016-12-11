@@ -32,7 +32,7 @@ class EmailNewArticle extends UnlistedSpecialPage {
 
 		$out->addHTML(
 			'<div class="email-new-article-message">'
-				. $this->msg( 'send-new-article-to-friends-message' )->text() .
+				. $this->msg( 'invite-send-new-article-to-friends' )->text() .
 			'</div>
 			<input type="button" class="site-button" onclick="window.location=\'' .
 				$invite->getFullURL( array( 'email_type' => 'view', 'page' => $page ) ) . '\'" value="' .

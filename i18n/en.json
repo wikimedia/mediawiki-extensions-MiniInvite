@@ -33,7 +33,7 @@
 	"invite-getcontactsmaintitle": "{{SITENAME}} is more fun with your friends. Invite all of them. Enter your e-mail and password below to load your contacts. <br /><b>We are serious about keeping your private information private. We do not store the e-mail address or password provided to us.</b>",
 	"invite-msg-sent": "Messages Sent!",
 	"invite-share-article": "Share Your Article With Your Friends!",
-	"send-new-article-to-friends-message": "Awesome. Now, let's get you some reads? Share your article with your friends. Just click below!",
+	"invite-send-new-article-to-friends": "Awesome. Now, let's get you some reads! Share your article with your friends. Just click below!",
 	"invite-my-friends": "Invite My Friends",
 	"invite-no-thanks": "No Thanks",
 	"invite-invalid-page": "Either the supplied page name was invalid, or no page name was supplied.",
