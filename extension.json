@@ -1,6 +1,6 @@
 {
 	"name": "MiniInvite",
-	"version": "2.1",
+	"version": "2.2",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -8,7 +8,7 @@
 	],
 	"license-name": "GPL-2.0+",
 	"url": "https://www.mediawiki.org/wiki/Extension:MiniInvite",
-	"description": "[[Special:InviteEmail|A special page to invite your friends to join the wiki]]",
+	"descriptionmsg": "invite-desc",
 	"type": "specialpage",
 	"callback": "MiniInviteHooks::registerExtension",
 	"config": {
