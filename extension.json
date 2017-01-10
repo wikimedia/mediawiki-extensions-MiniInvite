@@ -1,6 +1,6 @@
 {
 	"name": "MiniInvite",
-	"version": "2.2",
+	"version": "2.3",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -33,12 +33,9 @@
 		"UserEmailTrack": "UserEmailTrack.php"
 	},
 	"Hooks": {
-		"PageContentSaveComplete": [
-			"MiniInviteHooks::inviteFriendToEdit"
-		],
-		"PageContentInsertComplete": [
-			"MiniInviteHooks::createOpinionCheck"
-		],
+		"LoadExtensionSchemaUpdates": "MiniInviteHooks::onLoadExtensionSchemaUpdates",
+		"PageContentSaveComplete": "MiniInviteHooks::inviteFriendToEdit",
+		"PageContentInsertComplete": "MiniInviteHooks::createOpinionCheck",
 		"OutputPageBeforeHTML": [
 			"MiniInviteHooks::inviteRedirect",
 			"MiniInviteHooks::displayInviteLinks"

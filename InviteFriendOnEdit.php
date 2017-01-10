@@ -134,4 +134,29 @@ class MiniInviteHooks {
 		return true;
 	}
 
+	/**
+	 * Adds the new required database table into the database when the user
+	 * runs /maintenance/update.php (the core database updater script).
+	 *
+	 * @param DatabaseUpdater $updater
+	 * @return bool
+	 */
+	public static function onLoadExtensionSchemaUpdates( $updater ) {
+		$dir = __DIR__ . '/sql';
+
+		$dbType = $updater->getDB()->getType();
+		$filename = 'user_email_track.sql';
+		// For non-MySQL/MariaDB/SQLite DBMSes, use the appropriately named file
+		/*
+		if ( !in_array( $dbType, array( 'mysql', 'sqlite' ) ) ) {
+			$filename = "user_email_track.{$dbType}.sql";
+		} else {
+			$filename = 'user_email_track.sql';
+		}
+		*/
+
+		$updater->addExtensionUpdate( array( 'addTable', 'user_email_track', "{$dir}/{$filename}", true ) );
+
+		return true;
+	}
 }
