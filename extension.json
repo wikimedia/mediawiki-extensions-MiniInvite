@@ -29,7 +29,8 @@
 	"AutoloadClasses": {
 		"EmailNewArticle": "SpecialEmailNewArticle.php",
 		"InviteEmail": "SpecialInviteEmail.php",
-		"MiniInviteHooks": "InviteFriendOnEdit.php"
+		"MiniInviteHooks": "InviteFriendOnEdit.php",
+		"UserEmailTrack": "UserEmailTrack.php"
 	},
 	"Hooks": {
 		"PageContentSaveComplete": [
