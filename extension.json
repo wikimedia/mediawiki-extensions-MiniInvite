@@ -1,6 +1,6 @@
 {
 	"name": "MiniInvite",
-	"version": "2.3",
+	"version": "2.4.0",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -24,13 +24,13 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"MiniInviteAliases": "MiniInvite.alias.php"
+		"MiniInviteAliases": "includes/MiniInvite.alias.php"
 	},
 	"AutoloadClasses": {
-		"EmailNewArticle": "SpecialEmailNewArticle.php",
-		"InviteEmail": "SpecialInviteEmail.php",
-		"MiniInviteHooks": "InviteFriendOnEdit.php",
-		"UserEmailTrack": "UserEmailTrack.php"
+		"EmailNewArticle": "includes/specials/SpecialEmailNewArticle.php",
+		"InviteEmail": "includes/specials/SpecialInviteEmail.php",
+		"MiniInviteHooks": "includes/MiniInvite.hooks.php",
+		"UserEmailTrack": "includes/UserEmailTrack.class.php"
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "MiniInviteHooks::onLoadExtensionSchemaUpdates",

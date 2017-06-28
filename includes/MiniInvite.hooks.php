@@ -142,7 +142,7 @@ class MiniInviteHooks {
 	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater ) {
-		$dir = __DIR__ . '/sql';
+		$dir = __DIR__ . '/../sql';
 
 		$dbType = $updater->getDB()->getType();
 		$filename = 'user_email_track.sql';
