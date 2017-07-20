@@ -27,11 +27,7 @@ class InviteEmail extends UnlistedSpecialPage {
 		}
 
 		// Need to be logged in to use this special page
-		if ( $user->isAnon() ) {
-			$out->setPageTitle( $this->msg( 'invite-not-logged-in' )->text() );
-			$out->addWikiMsg( 'invite-email-anon-text' );
-			return;
-		}
+		$this->requireLogin( 'invite-email-anon-text', 'invite-not-logged-in' );
 
 		// Add CSS
 		$out->addModuleStyles( 'ext.miniInvite.css' );
