@@ -200,3 +200,15 @@ div.invite-skip-link a {
 	border: 1px solid #DCDCDC;
 	background-color: #F2F2F2;
 }
+
+/**
+ * Prevent the "Subject" and "Email body" fields from overflowing on mobile
+ * @see https://phabricator.wikimedia.org/T156481
+ */
+.email-field #subject {
+	max-width: 91%;
+}
+
+.email-field #body {
+	max-width: 93%;
+}
