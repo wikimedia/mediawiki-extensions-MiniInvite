@@ -10,12 +10,29 @@ class MiniInviteHooks {
 		$wgEmailFrom = $wgPasswordSender;
 	}
 
-	public static function inviteFriendToEdit( $article, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
+	/**
+	 * PageContentSaveComplete hook handler
+	 *
+	 * @param WikiPage $wikiPage
+	 * @param $user
+	 * @param $content
+	 * @param $summary
+	 * @param $isMinor
+	 * @param $isWatch
+	 * @param $section
+	 * @param $flags
+	 * @param $revision
+	 * @param $status
+	 * @param $baseRevId
+	 *
+	 * @return bool
+	 */
+	public static function inviteFriendToEdit( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
-			$edits_views = ( isset( $_SESSION['edits_views'] ) ? $_SESSION['edits_views'] : array( $article->getID() => 0 ) );
-			$page_edits_views = $edits_views[$article->getID()];
-			$edits_views[$article->getID()] = ( $page_edits_views + 1 );
+			$edits_views = ( isset( $_SESSION['edits_views'] ) ? $_SESSION['edits_views'] : array( $wikiPage->getID() => 0 ) );
+			$page_edits_views = $edits_views[$wikiPage->getID()];
+			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
 
 			$_SESSION['edits_views'] = $edits_views;
 		}
