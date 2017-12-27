@@ -172,7 +172,7 @@ class MiniInviteHooks {
 		}
 		*/
 
-		$updater->addExtensionUpdate( array( 'addTable', 'user_email_track', "{$dir}/{$filename}", true ) );
+		$updater->addExtensionTable( 'user_email_track', "{$dir}/{$filename}" );
 
 		return true;
 	}
