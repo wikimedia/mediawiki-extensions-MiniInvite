@@ -39,14 +39,14 @@ class UserEmailTrack {
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->insert(
 				'user_email_track',
-				array(
+				[
 					'ue_user_id' => $this->user_id,
 					'ue_user_name' => $this->user_name,
 					'ue_type' => $type,
 					'ue_count' => $count,
 					'ue_page_title' => $page_title,
 					'ue_date' => date( 'Y-m-d H:i:s' ),
-				),
+				],
 				__METHOD__
 			);
 		}

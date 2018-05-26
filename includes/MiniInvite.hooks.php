@@ -30,7 +30,7 @@ class MiniInviteHooks {
 	public static function inviteFriendToEdit( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
-			$edits_views = ( isset( $_SESSION['edits_views'] ) ? $_SESSION['edits_views'] : array( $wikiPage->getID() => 0 ) );
+			$edits_views = ( isset( $_SESSION['edits_views'] ) ? $_SESSION['edits_views'] : [ $wikiPage->getID() => 0 ] );
 			$page_edits_views = $edits_views[$wikiPage->getID()];
 			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
 
@@ -50,8 +50,8 @@ class MiniInviteHooks {
 			$dbr = wfGetDB( DB_MASTER );
 			$res = $dbr->select(
 				'categorylinks',
-				array( 'cl_to' ),
-				array( 'cl_from' => $title->getArticleID() ),
+				[ 'cl_to' ],
+				[ 'cl_from' => $title->getArticleID() ],
 				__METHOD__
 			);
 
@@ -71,7 +71,7 @@ class MiniInviteHooks {
 		if ( $wgSendNewArticleToFriends ) {
 			if ( isset( $_SESSION['new_opinion'] ) ) {
 				$invite = SpecialPage::getTitleFor( 'EmailNewArticle' );
-				$out->redirect( $invite->getFullURL( array( 'page' => $_SESSION['new_opinion'] ) ) );
+				$out->redirect( $invite->getFullURL( [ 'page' => $_SESSION['new_opinion'] ] ) );
 				unset( $_SESSION['new_opinion'] );
 			}
 		}
@@ -97,8 +97,7 @@ class MiniInviteHooks {
 			!$out->isArticle() || $t->isMainPage() || $t->isTalkPage() ||
 			$t->inNamespaces( NS_SPECIAL, NS_MEDIAWIKI ) ||
 			$t->equals( Title::makeTitleSafe( NS_USER, $t->getText() ) )
-		)
-		{
+		) {
 			return true;
 		}
 
@@ -116,8 +115,8 @@ class MiniInviteHooks {
 			$s .= Linker::link(
 				$invite_title,
 				wfMessage( 'invite-friend-to-edit' )->plain(),
-				array(),
-				array( 'email_type' => 'edit', 'page' => $t->getText() )
+				[],
+				[ 'email_type' => 'edit', 'page' => $t->getText() ]
 			);
 			$s .= '</span>';
 			$edits_views[$wikiPage->getID()] = $page_edits_views + 1;
@@ -131,8 +130,8 @@ class MiniInviteHooks {
 			$s .= Linker::link(
 				$invite_title,
 				wfMessage( 'invite-friend-to-read' )->plain(),
-				array(),
-				array( 'email_type' => 'view', 'page' => $t->getText() )
+				[],
+				[ 'email_type' => 'view', 'page' => $t->getText() ]
 			);
 			$s .= '</span>';
 			$_SESSION['new_opinion'] = 0;
@@ -145,7 +144,7 @@ class MiniInviteHooks {
 			// page, which is where we want it; appending to $text places it at the
 			// very *bottom* of the page, which is what we do *not* want.
 			$out->addHTML( $s );
-			#$text .= $s;
+			# $text .= $s;
 		}
 
 		return true;

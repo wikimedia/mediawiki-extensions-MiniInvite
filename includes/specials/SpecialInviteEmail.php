@@ -53,10 +53,10 @@ class InviteEmail extends UnlistedSpecialPage {
 						new MailAddress( $this->from ),
 						$subject,
 						$message,
-						array(
+						[
 							'replyTo' => new MailAddress( $this->from ),
 							'contentType' => 'text/html; charset=UTF-8'
-						)
+						]
 					);
 				}
 			}
@@ -205,7 +205,7 @@ class InviteEmail extends UnlistedSpecialPage {
 				- <span class=\"profile-on\"><a href=\"index.php?title=Special:InviteEmail\">Invite Your Friends</a></span>
 			</div>";
 		*/
-		//$html .= "<div class=\"invite-links\"><a href=\"index.php?title=Special:InviteContacts\">< Back to Invite</a></div>";
+		// $html .= "<div class=\"invite-links\"><a href=\"index.php?title=Special:InviteContacts\">< Back to Invite</a></div>";
 
 		if ( $request->getVal( 'from' ) == 'register' ) {
 			$html .= '<div class="invite-skip-link">';
