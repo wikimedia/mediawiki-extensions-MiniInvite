@@ -39,31 +39,24 @@ class MiniInviteHooks {
 		return true;
 	}
 
+	/**
+	 * If the user just created a new page in the NS_BLOG namespace (defined by the
+	 * BlogPage extension) and $wgSendNewArticleToFriends is set to true, this
+	 * function sets the $_SESSION['new_opinion'] flag to the name of the new Blog:
+	 * page.
+	 *
+	 * inviteRedirect() below then redirects the user to Special:EmailNewArticle/<name of the new Blog: page>,
+	 * which allows the user to advertise their new page to their friends via email.
+	 */
 	public static function createOpinionCheck( $wikiPage, User $user, $content, $summary, $isMinor, $isWatch, $section, $flags, Revision $revision ) {
 		global $wgSendNewArticleToFriends;
 
 		if ( $wgSendNewArticleToFriends ) {
-			global $wgLang;
-
 			$title = $wikiPage->getTitle();
-			// If the user has created a new opinion, we want to turn on a session flag
-			$dbr = wfGetDB( DB_MASTER );
-			$res = $dbr->select(
-				'categorylinks',
-				[ 'cl_to' ],
-				[ 'cl_from' => $title->getArticleID() ],
-				__METHOD__
-			);
-
-			foreach ( $res as $row ) {
-				// @todo FIXME: this is way too site-specific...
-				if ( $wgLang->uc( $row->cl_to ) == 'OPINIONS' ) {
-					$_SESSION['new_opinion'] = $title->getText();
-				}
+			if ( define( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
+				$_SESSION['new_opinion'] = $title->getPrefixedText();
 			}
 		}
-
-		return true;
 	}
 
 	public static function inviteRedirect( OutputPage &$out, &$text ) {
@@ -106,7 +99,7 @@ class MiniInviteHooks {
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
 		$pageId = ( $wikiPage->getID() !== null ) ? $wikiPage->getID() : 0;
-		$page_edits_views = $edits_views[$pageId];
+		$page_edits_views = isset( $edits_views[$pageId] ) ? $edits_views[$pageId] : 0;
 
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
 
@@ -155,7 +148,6 @@ class MiniInviteHooks {
 	 * runs /maintenance/update.php (the core database updater script).
 	 *
 	 * @param DatabaseUpdater $updater
-	 * @return bool
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater ) {
 		$dir = __DIR__ . '/../sql';
@@ -164,15 +156,11 @@ class MiniInviteHooks {
 		$filename = 'user_email_track.sql';
 		// For non-MySQL/MariaDB/SQLite DBMSes, use the appropriately named file
 		/*
-		if ( !in_array( $dbType, array( 'mysql', 'sqlite' ) ) ) {
+		if ( !in_array( $dbType, [ 'mysql', 'sqlite' ] ) ) {
 			$filename = "user_email_track.{$dbType}.sql";
-		} else {
-			$filename = 'user_email_track.sql';
 		}
 		*/
 
 		$updater->addExtensionTable( 'user_email_track', "{$dir}/{$filename}" );
-
-		return true;
 	}
 }
