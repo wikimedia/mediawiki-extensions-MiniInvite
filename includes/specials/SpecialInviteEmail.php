@@ -76,7 +76,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 			if ( $user->isLoggedIn() ) {
 				$html .= '<div class="invite-links">';
-				$html .= Linker::link(
+				$html .= $this->getLinkRenderer()->makeLink(
 					$user->getUserPage(),
 					$this->msg( 'invite-back-to-userpage' )->plain()
 				);
@@ -209,7 +209,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 		if ( $request->getVal( 'from' ) == 'register' ) {
 			$html .= '<div class="invite-skip-link">';
-			$html .= Linker::link(
+			$html .= $this->getLinkRenderer()->makeLink(
 				$user->getUserPage(),
 				$this->msg( 'invite-skip-step' )->plain()
 			);
