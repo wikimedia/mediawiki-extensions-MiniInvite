@@ -87,7 +87,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 			$html .= '<p>
 				<input type="button" class="invite-form-button" value="' .
-					$this->msg( 'invite-more-friends' )->text() .
+					$this->msg( 'invite-more-friends' )->escaped() .
 					'" onclick="window.location=\'' .
 					htmlspecialchars( $this->getTitle()->getFullURL(), ENT_QUOTES ) . '\'" />
 			</p>';
@@ -221,17 +221,17 @@ class InviteEmail extends UnlistedSpecialPage {
 				<input type="hidden" value="' . $this->track . '" name="track" />
 
 				<div class="invite-form-enter-email">
-					<p class="invite-email-title">' . $this->msg( 'invite-enter-emails' )->text() . '</p>
-					<p class="invite-email-submessage">' . $this->msg( 'invite-comma-separated' )->text() . '</p>
+					<p class="invite-email-title">' . $this->msg( 'invite-enter-emails' )->escaped() . '</p>
+					<p class="invite-email-submessage">' . $this->msg( 'invite-comma-separated' )->escaped() . '</p>
 					<p>
 						<textarea name="email_to" id="email_to" rows="15" cols="42"></textarea>
 					</p>
 				</div>
 				<div class="invite-email-content">
-					<p class="invite-email-title">' . $this->msg( 'invite-customize-email' )->text() . '</p>
-					<p class="email-field">' . $this->msg( 'invite-customize-subject' )->text() . '</p>
+					<p class="invite-email-title">' . $this->msg( 'invite-customize-email' )->escaped() . '</p>
+					<p class="email-field">' . $this->msg( 'invite-customize-subject' )->escaped() . '</p>
 					<p class="email-field"><input type="text" name="subject" id="subject" value="' . htmlspecialchars( $email['subject'], ENT_QUOTES ) . '" /></p>
-					<p class="email-field">' . $this->msg( 'invite-customize-body' )->text() . '</p>
+					<p class="email-field">' . $this->msg( 'invite-customize-body' )->escaped() . '</p>
 					<p class="email-field">
 						<textarea name="body" id="body" rows="15" cols="45" wrap="hard">'
 							. $email['body'] .
@@ -239,7 +239,7 @@ class InviteEmail extends UnlistedSpecialPage {
 					</p>
 					<div class="email-buttons">
 						<input type="button" class="site-button" onclick="document.email.submit()" value="' .
-							$this->msg( 'invite-customize-send' )->text() . '" />
+							$this->msg( 'invite-customize-send' )->escaped() . '" />
 					</div>
 				</div>
 				<div class="visualClear"></div>

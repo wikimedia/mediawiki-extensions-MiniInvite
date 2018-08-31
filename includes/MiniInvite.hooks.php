@@ -107,7 +107,7 @@ class MiniInviteHooks {
 			$s .= '<span id="invite_to_edit" class="edit">';
 			$s .= Linker::link(
 				$invite_title,
-				wfMessage( 'invite-friend-to-edit' )->plain(),
+				wfMessage( 'invite-friend-to-edit' )->escaped(),
 				[],
 				[ 'email_type' => 'edit', 'page' => $t->getText() ]
 			);
@@ -122,7 +122,7 @@ class MiniInviteHooks {
 			$s .= '<span id="invite_to_read" class="edit">';
 			$s .= Linker::link(
 				$invite_title,
-				wfMessage( 'invite-friend-to-read' )->plain(),
+				wfMessage( 'invite-friend-to-read' )->escaped(),
 				[],
 				[ 'email_type' => 'view', 'page' => $t->getText() ]
 			);

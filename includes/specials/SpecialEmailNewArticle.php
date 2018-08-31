@@ -32,14 +32,14 @@ class EmailNewArticle extends UnlistedSpecialPage {
 
 		$out->addHTML(
 			'<div class="email-new-article-message">'
-				. $this->msg( 'invite-send-new-article-to-friends' )->text() .
+				. $this->msg( 'invite-send-new-article-to-friends' )->escaped() .
 			'</div>
 			<input type="button" class="site-button" onclick="window.location=\'' .
 				$invite->getFullURL( [ 'email_type' => 'view', 'page' => $page ] ) . '\'" value="' .
-				$this->msg( 'invite-my-friends' )->text() . '" />
+				$this->msg( 'invite-my-friends' )->escaped() . '" />
 			<input type="button" class="site-button" onclick="window.location=\'' .
 				$new_page->getFullURL() . '\'" value="' .
-				$this->msg( 'invite-no-thanks' )->text() . '" />' . "\n"
+				$this->msg( 'invite-no-thanks' )->escaped() . '" />' . "\n"
 		);
 	}
 }
