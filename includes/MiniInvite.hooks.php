@@ -53,7 +53,7 @@ class MiniInviteHooks {
 
 		if ( $wgSendNewArticleToFriends ) {
 			$title = $wikiPage->getTitle();
-			if ( define( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
+			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
 				$_SESSION['new_opinion'] = $title->getPrefixedText();
 			}
 		}
