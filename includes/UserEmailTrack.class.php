@@ -5,6 +5,17 @@
 class UserEmailTrack {
 
 	/**
+	 * @var int $user_id User ID
+	 */
+	private $user_id;
+
+	/**
+	 * @var string $user_name User name; if not supplied to the constructor, user
+	 *  ID will be used to load this property
+	 */
+	private $user_name;
+
+	/**
 	 * Constructor
 	 *
 	 * @param int $user_id ID number of the user that we want to track stats for

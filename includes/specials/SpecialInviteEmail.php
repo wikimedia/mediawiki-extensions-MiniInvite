@@ -3,6 +3,29 @@
 class InviteEmail extends UnlistedSpecialPage {
 
 	/**
+	 * @var string $from Email address from which the invite emails are sent out;
+	 *  value is calculated in execute() and is one of the defined globals, either
+	 *  MiniInvite's own one or the one from MW core
+	 */
+	private $from;
+
+	/**
+	 * @var int $track Numeric tracking code thing, see UserEmailTrack#track_email
+	 */
+	private $track;
+
+	/**
+	 * @var string $email_type Type of the invitation email we're sending out;
+	 *  either rate, edit or view
+	 */
+	private $email_type;
+
+	/**
+	 * @var string $page Page name without the namespace
+	 */
+	private $page;
+
+	/**
 	 * Constructor -- set up the new special page
 	 */
 	public function __construct() {
@@ -115,6 +138,8 @@ class InviteEmail extends UnlistedSpecialPage {
 		if ( !trim( $user_label ) ) {
 			$user_label = $user->getName();
 		}
+
+		$email = [];
 
 		switch ( $type ) {
 			case 'rate':

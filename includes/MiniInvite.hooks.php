@@ -30,7 +30,7 @@ class MiniInviteHooks {
 	public static function inviteFriendToEdit( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
-			$edits_views = ( isset( $_SESSION['edits_views'] ) ? $_SESSION['edits_views'] : [ $wikiPage->getID() => 0 ] );
+			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
 			$page_edits_views = $edits_views[$wikiPage->getID()];
 			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
 
@@ -99,7 +99,7 @@ class MiniInviteHooks {
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
 		$pageId = ( $wikiPage->getID() !== null ) ? $wikiPage->getID() : 0;
-		$page_edits_views = isset( $edits_views[$pageId] ) ? $edits_views[$pageId] : 0;
+		$page_edits_views = $edits_views[$pageId] ?? 0;
 
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
 
