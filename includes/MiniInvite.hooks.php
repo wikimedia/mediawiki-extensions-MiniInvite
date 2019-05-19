@@ -98,7 +98,7 @@ class MiniInviteHooks {
 		// page ID is not set when creating a new page (obviously), so using $wikiPage->getID()
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
-		$pageId = ( $wikiPage->getID() !== null ) ? $wikiPage->getID() : 0;
+		$pageId = $wikiPage->getID() ?? 0;
 		$page_edits_views = $edits_views[$pageId] ?? 0;
 
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
