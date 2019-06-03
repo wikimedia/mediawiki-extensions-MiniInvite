@@ -47,20 +47,16 @@
 	},
 	"ResourceModules": {
 		"ext.miniInvite.css": {
-			"styles": "resources/css/invite.css",
-			"position": "top"
+			"styles": "resources/css/invite.css"
 		},
 		"ext.miniInvite.emailNewArticle.css": {
-			"styles": "resources/css/EmailNewArticle.css",
-			"position": "top"
+			"styles": "resources/css/EmailNewArticle.css"
 		},
 		"ext.miniInvite.inviteLinks.css": {
-			"styles": "resources/css/InviteLinks.css",
-			"position": "top"
+			"styles": "resources/css/InviteLinks.css"
 		},
 		"ext.miniInvite.DisplayInviteLinks.js": {
-			"scripts": "resources/js/DisplayInviteLinks.js",
-			"position": "bottom"
+			"scripts": "resources/js/DisplayInviteLinks.js"
 		}
 	},
 	"manifest_version": 1
