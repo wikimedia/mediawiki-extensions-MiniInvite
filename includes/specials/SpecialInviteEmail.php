@@ -112,7 +112,7 @@ class InviteEmail extends UnlistedSpecialPage {
 				<input type="button" class="invite-form-button" value="' .
 					$this->msg( 'invite-more-friends' )->escaped() .
 					'" onclick="window.location=\'' .
-					htmlspecialchars( $this->getTitle()->getFullURL(), ENT_QUOTES ) . '\'" />
+					htmlspecialchars( $this->getPageTitle()->getFullURL(), ENT_QUOTES ) . '\'" />
 			</p>';
 
 			$out->addHTML( $html );
