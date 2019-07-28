@@ -31,7 +31,7 @@ class MiniInviteHooks {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
 			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
-			$page_edits_views = $edits_views[$wikiPage->getID()];
+			$page_edits_views = $edits_views[$wikiPage->getID()] ?? 0;
 			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
 
 			$_SESSION['edits_views'] = $edits_views;
