@@ -45,8 +45,8 @@ class InviteEmail extends UnlistedSpecialPage {
 		$user = $this->getUser();
 
 		// Check blocks
-		if ( $user->isBlocked() ) {
-			throw new UserBlockedError( $user->mBlock );
+		if ( $user->getBlock() ) {
+			throw new UserBlockedError( $user->getBlock() );
 		}
 
 		// Need to be logged in to use this special page
