@@ -87,7 +87,7 @@ class InviteEmail extends UnlistedSpecialPage {
 			if ( class_exists( 'UserEmailTrack' ) ) {
 				$mail = new UserEmailTrack( $user->getId(), $user->getName() );
 				$mail->track_email(
-					$request->getVal( 'track' ),
+					$request->getInt( 'track' ),
 					count( $addresses ),
 					$request->getVal( 'page_title' )
 				);
