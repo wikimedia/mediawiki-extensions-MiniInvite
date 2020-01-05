@@ -5,30 +5,17 @@
 class UserEmailTrack {
 
 	/**
-	 * @var int $user_id User ID
+	 * @var User $user
 	 */
-	private $user_id;
-
-	/**
-	 * @var string $user_name User name; if not supplied to the constructor, user
-	 *  ID will be used to load this property
-	 */
-	private $user_name;
+	private $user;
 
 	/**
 	 * Constructor
 	 *
-	 * @param int $user_id ID number of the user that we want to track stats for
-	 * @param string $user_name User's name; if not supplied, then the user ID will be used to get the user name from DB.
+	 * @param User $user
 	 */
-	public function __construct( $user_id, $user_name ) {
-		$this->user_id = $user_id;
-		if ( !$user_name ) {
-			$user = User::newFromId( $this->user_id );
-			$user->loadFromDatabase();
-			$user_name = $user->getName();
-		}
-		$this->user_name = $user_name;
+	public function __construct( User $user ) {
+		$this->user = $user;
 	}
 
 	/**
@@ -46,13 +33,12 @@ class UserEmailTrack {
 	 * @param string $page_title
 	 */
 	public function track_email( $type, $count, $page_title = '' ) {
-		if ( $this->user_id > 0 ) {
+		if ( $this->user->isLoggedIn() ) {
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->insert(
 				'user_email_track',
 				[
-					'ue_user_id' => $this->user_id,
-					'ue_user_name' => $this->user_name,
+					'ue_actor' => $this->user->getActorId(),
 					'ue_type' => $type,
 					'ue_count' => $count,
 					'ue_page_title' => $page_title,
