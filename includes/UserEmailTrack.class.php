@@ -42,7 +42,7 @@ class UserEmailTrack {
 					'ue_type' => $type,
 					'ue_count' => $count,
 					'ue_page_title' => $page_title,
-					'ue_date' => date( 'Y-m-d H:i:s' ),
+					'ue_date' => $dbw->timestamp( date( 'Y-m-d H:i:s' ) ),
 				],
 				__METHOD__
 			);
