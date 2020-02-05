@@ -153,13 +153,12 @@ class MiniInviteHooks {
 		$dir = __DIR__ . '/../sql';
 
 		$dbType = $updater->getDB()->getType();
+
 		$filename = 'user_email_track.sql';
 		// For non-MySQL/MariaDB/SQLite DBMSes, use the appropriately named file
-		/*
 		if ( !in_array( $dbType, [ 'mysql', 'sqlite' ] ) ) {
 			$filename = "user_email_track.{$dbType}.sql";
 		}
-		*/
 
 		$updater->addExtensionTable( 'user_email_track', "{$dir}/{$filename}" );
 	}
