@@ -197,7 +197,7 @@ class InviteEmail extends UnlistedSpecialPage {
 				$this->track = 3;
 				$register = SpecialPage::getTitleFor( 'Userlogin', 'signup' );
 				$user_title = Title::makeTitle( NS_USER, $user->getName() );
-				$email['subject'] = $this->msg( 'invite-subject', $user_label )->parse();
+				$email['subject'] = $this->msg( 'invite-subject', $user_label )->text();
 
 				$email['body'] = $this->msg(
 					'invite-body',
@@ -259,7 +259,7 @@ class InviteEmail extends UnlistedSpecialPage {
 					<p class="email-field">' . $this->msg( 'invite-customize-body' )->escaped() . '</p>
 					<p class="email-field">
 						<textarea name="body" id="body" rows="15" cols="45" wrap="hard">'
-							. $email['body'] .
+							. htmlspecialchars( $email['body'] ) .
 						'</textarea>
 					</p>
 					<div class="email-buttons">
