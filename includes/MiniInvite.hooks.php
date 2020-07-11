@@ -2,8 +2,10 @@
 
 class MiniInviteHooks {
 
-	// Sets the default value of $wgEmailFrom since that cannot be done in
-	// extension.json, obviously, because JSON is not PHP
+	/**
+	 * Sets the default value of $wgEmailFrom since that cannot be done in
+	 * extension.json, obviously, because JSON is not PHP
+	 */
 	public static function registerExtension() {
 		global $wgEmailFrom, $wgPasswordSender;
 		// The email address where invite emails are sent out from
@@ -14,16 +16,16 @@ class MiniInviteHooks {
 	 * PageContentSaveComplete hook handler
 	 *
 	 * @param WikiPage $wikiPage
-	 * @param $user
-	 * @param $content
-	 * @param $summary
-	 * @param $isMinor
-	 * @param $isWatch
-	 * @param $section
-	 * @param $flags
-	 * @param $revision
-	 * @param $status
-	 * @param $baseRevId
+	 * @param User $user
+	 * @param Content $content
+	 * @param string $summary
+	 * @param bool $isMinor
+	 * @param null $isWatch
+	 * @param null $section
+	 * @param int $flags
+	 * @param Revision $revision
+	 * @param Status $status
+	 * @param int|bool $baseRevId
 	 *
 	 * @return bool
 	 */
@@ -47,6 +49,15 @@ class MiniInviteHooks {
 	 *
 	 * inviteRedirect() below then redirects the user to Special:EmailNewArticle/<name of the new Blog: page>,
 	 * which allows the user to advertise their new page to their friends via email.
+	 * @param WikiPage $wikiPage
+	 * @param User $user
+	 * @param Content $content
+	 * @param string $summary
+	 * @param bool $isMinor
+	 * @param null $isWatch
+	 * @param null $section
+	 * @param int $flags
+	 * @param Revision $revision
 	 */
 	public static function createOpinionCheck( $wikiPage, User $user, $content, $summary, $isMinor, $isWatch, $section, $flags, Revision $revision ) {
 		global $wgSendNewArticleToFriends;
@@ -59,6 +70,10 @@ class MiniInviteHooks {
 		}
 	}
 
+	/**
+	 * @param OutputPage &$out
+	 * @param string &$text
+	 */
 	public static function inviteRedirect( OutputPage &$out, &$text ) {
 		global $wgSendNewArticleToFriends;
 		if ( $wgSendNewArticleToFriends ) {
