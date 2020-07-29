@@ -11,6 +11,9 @@
 	"descriptionmsg": "invite-desc",
 	"type": "specialpage",
 	"callback": "MiniInviteHooks::registerExtension",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
 	"config": {
 		"SendNewArticleToFriends": false
 	},
