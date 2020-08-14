@@ -84,36 +84,39 @@ class InviteEmail extends UnlistedSpecialPage {
 				}
 			}
 
-			if ( class_exists( 'UserEmailTrack' ) ) {
-				$mail = new UserEmailTrack( $user );
-				$mail->track_email(
-					$request->getInt( 'track' ),
-					count( $addresses ),
-					$request->getVal( 'page_title' )
-				);
-			}
+			$mail = new UserEmailTrack( $user );
+			$mail->track_email(
+				$request->getInt( 'track' ),
+				count( $addresses ),
+				$request->getVal( 'page_title' )
+			);
 
 			$out->setPageTitle( $this->msg( 'invite-sent' )->text() );
+
+			$linkRenderer = $this->getLinkRenderer();
 
 			$html = '';
 
 			if ( $user->isLoggedIn() ) {
 				$html .= '<div class="invite-links">';
-				$html .= $this->getLinkRenderer()->makeLink(
+				$html .= $linkRenderer->makeLink(
 					$user->getUserPage(),
-					$this->msg( 'invite-back-to-userpage' )->plain()
+					new HtmlArmor( $this->msg( 'invite-back-to-userpage' )->parse() )
 				);
 				$html .= '</div>';
 			}
 
 			$html .= $this->msg( 'invite-sent-thanks' )->parse();
 
-			$html .= '<p>
-				<input type="button" class="invite-form-button" value="' .
-					$this->msg( 'invite-more-friends' )->escaped() .
-					'" onclick="window.location=\'' .
-					htmlspecialchars( $this->getPageTitle()->getFullURL(), ENT_QUOTES ) . '\'" />
-			</p>';
+			$html .= '<p>';
+			// @todo The link hover CSS for this could use some work, but at least it's not
+			// an <input> anymore and works even w/ JavaScript disabled
+			$html .= $linkRenderer->makeLink(
+				$this->getPageTitle(),
+				$this->msg( 'invite-more-friends' )->text(),
+				[ 'class' => 'invite-form-button' ]
+			);
+			$html .= '</p>';
 
 			$out->addHTML( $html );
 		} else {
@@ -263,7 +266,7 @@ class InviteEmail extends UnlistedSpecialPage {
 						'</textarea>
 					</p>
 					<div class="email-buttons">
-						<input type="button" class="site-button" onclick="document.email.submit()" value="' .
+						<input type="submit" class="site-button" onclick="document.email.submit()" value="' .
 							$this->msg( 'invite-customize-send' )->escaped() . '" />
 					</div>
 				</div>
