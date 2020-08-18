@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|En specialsida för att bjud in dina vänner att skriva upp sig på wikin]]",
+	"invite-subject": "$1 vill att du skriver upp dig på {{SITENAME}}!",
+	"invite-email-anon-text": "[[Special:UserLogin|Logga in]] för att skicka inbjudningar.",
+	"invite-not-logged-in": "Inte inloggad",
+	"invite-message": "{{SITENAME}} är roligare med vänner. Bjud in dina vänner att skriva upp sig till {{SITENAME}} genom att helt enkelt skriva in deras mejladresser och en inbjudan samt ett välkomstmeddelande och sen trycka på \"{{int:invite-customize-send}}\"",
+	"invite-skip-step": "Hoppa över",
+	"invite-sent": "Din inbjudan har skickats!",
+	"invite-back-to-userpage": "&lt; Tillbaka till din användarsida",
+	"invite-sent-thanks": "Tack för att du sprider ordet om {{SITENAME}}!",
+	"invite-more-friends": "Bjud in fler vänner",
+	"invite-your-friends": "Bjud in dina vänner",
+	"invite-enter-emails": "Skriv in e-post",
+	"invite-comma-separated": "(kommaseparerad för flera adresser)",
+	"invite-customize-email": "Anpassa din e-post",
+	"invite-customize-subject": "Ämne",
+	"invite-customize-body": "Innehåll",
+	"invite-customize-send": "Skicka mejl",
+	"invite-share-article": "Dela artikeln med dina vänner!",
+	"invite-send-new-article-to-friends": "Härligt. Nu skaffar vi oss några läsningar! Dela artikeln med dina vänner genom att klicka nedan!",
+	"invite-my-friends": "Bjud in mina vänner",
+	"invite-no-thanks": "Nej tack",
+	"invite-rate-subject": "$1 vill du betygsätter $2 på {{SITENAME}}",
+	"invite-friend-to-edit": "Bjud in en vän att redigera",
+	"invite-friend-to-read": "Bjud in en vän att läsa"
+}

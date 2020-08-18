@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"invite-not-logged-in": "Net ageloggt",
+	"invite-skip-step": "Dëse Schrëtt iwwersprangen",
+	"invite-sent": "Är Invitatioun gouf geschéckt!",
+	"invite-back-to-userpage": "&lt; Zréck op Är Benotzersäit",
+	"invite-more-friends": "Méi Frënn invitéieren",
+	"invite-your-friends": "Invitéiert Är Frënn",
+	"invite-enter-emails": "E-Mail-Adressen aginn",
+	"invite-comma-separated": "(kommagetrennt fir méi Adressen)",
+	"invite-customize-subject": "Sujet",
+	"invite-customize-send": "E-Mail schécken",
+	"invite-no-thanks": "Nee, merci"
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Spesialside for å invitere vennene dine til wikien]]",
+	"invite-subject": "$1 har invitert deg til {{SITENAME}}!",
+	"invite-body": "Hei!\n\nDin venn $1 har invitert deg til {{SITENAME}}! Sjekk ut wikien på http://{{SERVERNAME}}\n\nFor å bli med, trykk på denne lenka og registrer deg!\n$4\n\n{{SITENAME}}-teamet",
+	"invite-email-anon-text": "[[Special:UserLogin|Logg inn]] for å sende invitasjonseposter.",
+	"invite-not-logged-in": "Ikke innlogget",
+	"invite-message": "{{SITENAME}} er artigere med venner. Inviter vennene dine til {{SITENAME}} ved å skrive inn epostadressene deres og en invitasjonsmelding og trykk på «{{int:invite-customize-send}}»",
+	"invite-skip-step": "Hopp over dette steget",
+	"invite-sent": "Invitasjonen din har blitt sendt!",
+	"invite-back-to-userpage": "&lt; Tilbake til brukersiden din",
+	"invite-sent-thanks": "Takk for at du sprer ordet om {{SITENAME}}!",
+	"invite-more-friends": "Inviter flere venner",
+	"invite-your-friends": "Inviter vennene dine",
+	"invite-enter-emails": "Skriv inn epostadresser",
+	"invite-comma-separated": "(kommaatskilt for flere adresser)",
+	"invite-customize-email": "Tilpass eposten din",
+	"invite-customize-subject": "Emne",
+	"invite-customize-body": "Innhold",
+	"invite-customize-send": "Send epost",
+	"invite-share-article": "Del artikkelen din med vennene dine!",
+	"invite-send-new-article-to-friends": "Flott. La oss skaffe noen lesere! Del artikkelen med vennene dine, bare trykk nedenfor.",
+	"invite-my-friends": "Inviter vennene mine",
+	"invite-no-thanks": "Nei takk",
+	"invite-invalid-page": "Enten var det angitte sidenavnet ugyldig, eller så ble ikke noe sidenavn angitt.",
+	"invite-rate-subject": "$1 vil at du skal rangere $2 på {{SITENAME}}",
+	"invite-edit-subject": "$1 ønsker at du skal redigere $2 på {{SITENAME}}",
+	"invite-view-subject": "$1 ønsker at du skal lese *$2* på {{SITENAME}}",
+	"invite-edit-body": "Hei!\n\nDin venn $1 ønsker hjelp fra deg med å redigere $4 på {{SITENAME}}.\n\nTrykk her for å redigere:\n\n$5\n\nOg ikke glem å legge til $2 som venn på {{SITENAME}}, på $3.\n\n{{SITENAME}}-teamet",
+	"invite-rate-body": "Hei!\n\nDin venn $1 ønsker at du skal rangere $4 på {{SITENAME}}.\n\nTrykk her for å rangere den:\n\n$5\n\nOg ikke glem å legge til $2 som venn på {{SITENAME}}, på $3\n\n{{SITENAME}}-teamet",
+	"invite-view-body": "Hei!\n\nDin venn $1 har nettopp skrevet en ny artikkel på {{SITENAME}}, og vil at du skal ta en titt!\n\nTrykk her for å vise den:\n\n$5\n\nOg ikke glem å legge til $2 som venn på {{SITENAME}}, på $3.\n\n{{SITENAME}}-teamet",
+	"invite-friend-to-edit": "Inviter en venn til å redigere",
+	"invite-friend-to-read": "Inviter en venn til å lese"
+}

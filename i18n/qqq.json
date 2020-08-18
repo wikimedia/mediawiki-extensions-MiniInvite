@@ -1,5 +1,7 @@
 {
-	"@metadata": {},
+	"@metadata": {
+		"authors": []
+	},
 	"invite-desc": "{{desc|name=MiniInvite|url=https://www.mediawiki.org/wiki/Extension:MiniInvite}}",
 	"invite-subject": "Subject line of the main/default invitation email message. Its body text will be {{msg-mw|invite-body}}.\nParameters:\n* $1 is either the real name, or if not supplied, then the user name of the person who sent out the invitation email",
 	"invite-body": "Body text of the main/default invitation email message. Its title will be {{msg-mw|invite-subject}}.\nParameters:\n* $1 is either the real name, or if not supplied, then the user name of the person who sent out the invitation email",
