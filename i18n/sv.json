@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"WikiPhoenix"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|En specialsida för att bjud in dina vänner att skriva upp sig på wikin]]",
 	"invite-subject": "$1 vill att du skriver upp dig på {{SITENAME}}!",
+	"invite-body": "Hej!\n\nDin vän $1 vill att du registrerar dig på {{SITENAME}}! Gå in på http://{{SERVERNAME}}\n\nKlicka på denna länk för att registrera dig!\n$4\n\n{{SITENAME}}-teamet",
 	"invite-email-anon-text": "[[Special:UserLogin|Logga in]] för att skicka inbjudningar.",
 	"invite-not-logged-in": "Inte inloggad",
 	"invite-message": "{{SITENAME}} är roligare med vänner. Bjud in dina vänner att skriva upp sig till {{SITENAME}} genom att helt enkelt skriva in deras mejladresser och en inbjudan samt ett välkomstmeddelande och sen trycka på \"{{int:invite-customize-send}}\"",
@@ -25,7 +27,13 @@
 	"invite-send-new-article-to-friends": "Härligt. Nu skaffar vi oss några läsningar! Dela artikeln med dina vänner genom att klicka nedan!",
 	"invite-my-friends": "Bjud in mina vänner",
 	"invite-no-thanks": "Nej tack",
+	"invite-invalid-page": "Antingen var det angivna sidnamnet ogiltigt eller så angavs inget sidnamn.",
 	"invite-rate-subject": "$1 vill du betygsätter $2 på {{SITENAME}}",
+	"invite-edit-subject": "$1 vill du redigerar $2 på {{SITENAME}}",
+	"invite-view-subject": "$1 vill att du ska läsa *$2* på {{SITENAME}}",
+	"invite-edit-body": "Hej!\n\nDin vän $1 vill att du ska hjälpa till med att redigera $4 på {{SITENAME}}.\n\nKlicka här för att redigera:\n\n$5\n\nOch glöm inte att lägga till $2 som din {{SITENAME}}-vän på $3\n\n{{SITENAME}}-teamet",
+	"invite-rate-body": "Hej!\n\nDin vän $1 vill att du ska betygsätta $4 på {{SITENAME}}.\n\nKlicka här för att betygsätta:\n\n$5\n\nOch glöm inte att lägga till $2 som din {{SITENAME}}-vän på $3\n\n{{SITENAME}}-teamet",
+	"invite-view-body": "Hej!\n\nDin vän $1 har precis skrivit en ny artikel på {{SITENAME}} och vill att du ska kolla på den!\n\nKlicka här för att se:\n\n$5\n\nOch glöm inte att lägga till $2 som din {{SITENAME}}-vän på $3\n\n{{SITENAME}}-teamet",
 	"invite-friend-to-edit": "Bjud in en vän att redigera",
 	"invite-friend-to-read": "Bjud in en vän att läsa"
 }

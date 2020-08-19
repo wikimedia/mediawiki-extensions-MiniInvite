@@ -7,6 +7,7 @@
 	"invite-subject": "$1 désire que vous rejoigniez {{SITENAME}}!",
 	"invite-not-logged-in": "Non connecté",
 	"invite-skip-step": "Sauter cette étape",
+	"invite-back-to-userpage": "&lt; Retour à votre page utilisateur",
 	"invite-more-friends": "Inviter plus d'amis",
 	"invite-your-friends": "Inviter vos amis",
 	"invite-enter-emails": "Entrer les adresses courriels",
@@ -16,5 +17,7 @@
 	"invite-customize-send": "Envoyer un courriel",
 	"invite-my-friends": "Inviter mes amis",
 	"invite-no-thanks": "Non merci",
-	"invite-friend-to-edit": "Inviter un amis à modifier"
+	"invite-rate-subject": "$1 vous demande d'évaluer $2 sur {{SITENAME}}",
+	"invite-friend-to-edit": "Inviter un ami à modifier",
+	"invite-friend-to-read": "Inviter un ami à lire"
 }
