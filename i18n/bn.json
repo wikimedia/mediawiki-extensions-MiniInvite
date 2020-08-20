@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান"
+		]
+	},
+	"invite-not-logged-in": "আপনি প্রবেশ করেননি",
+	"invite-customize-subject": "বিষয়",
+	"invite-customize-send": "ইমেইল পাঠান",
+	"invite-no-thanks": "না ধন্যবাদ"
+}

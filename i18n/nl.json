@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"invite-not-logged-in": "Niet aangemeld",
+	"invite-skip-step": "Deze stap overslaan",
+	"invite-sent": "Uw uitnodigin is verstuurd!",
+	"invite-back-to-userpage": "&lt; Terug naar uw gebruikerspagina",
+	"invite-more-friends": "Meer vrienden uitnodigen",
+	"invite-customize-subject": "Onderwerp",
+	"invite-customize-body": "E-mailtekst",
+	"invite-customize-send": "E-mail verzenden",
+	"invite-my-friends": "Mijn vrienden uitnodigen",
+	"invite-no-thanks": "Nee, bedankt"
+}
