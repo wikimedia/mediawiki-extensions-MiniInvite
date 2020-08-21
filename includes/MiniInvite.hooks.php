@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\User\UserIdentity;
+
 class MiniInviteHooks {
 
 	/**
@@ -7,9 +9,52 @@ class MiniInviteHooks {
 	 * extension.json, obviously, because JSON is not PHP
 	 */
 	public static function registerExtension() {
-		global $wgEmailFrom, $wgPasswordSender;
+		global $wgEmailFrom, $wgPasswordSender, $wgHooks;
 		// The email address where invite emails are sent out from
 		$wgEmailFrom = $wgPasswordSender;
+		if ( class_exists( MediaWiki\HookContainer\HookContainer::class ) ) {
+			// MW 1.35+
+			$wgHooks['PageSaveComplete'][] = 'MiniInviteHooks::inviteFriendToEdit';
+		} else {
+			$wgHooks['PageContentSaveComplete'][] = 'MiniInviteHooks::inviteFriendToEditOld';
+			$wgHooks['PageContentInsertComplete'][] = 'MiniInviteHooks::createOpinionCheck';
+		}
+	}
+
+	/**
+	 * PageSaveComplete hook handler
+	 *
+	 * If the user just created a new page in the NS_BLOG namespace (defined by the
+	 * BlogPage extension) and $wgSendNewArticleToFriends is set to true, this
+	 * function sets the $_SESSION['new_opinion'] flag to the name of the new Blog:
+	 * page.
+	 *
+	 * inviteRedirect() below then redirects the user to Special:EmailNewArticle/<name of the new Blog: page>,
+	 * which allows the user to advertise their new page to their friends via email.
+	 *
+	 * @param WikiPage $wikiPage WikiPage modified
+	 * @param UserIdentity $user User performing the modification
+	 * @param string $summary Edit summary/comment
+	 * @param int $flags Flags passed to WikiPage::doEditContent()
+	 */
+	public static function inviteFriendToEdit( WikiPage $wikiPage, $user, $summary, $flags ) {
+		global $wgSendNewArticleToFriends;
+
+		if ( !( $flags & EDIT_NEW ) ) {
+			// Increment edits for this page by one (for this user's session)
+			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
+			$page_edits_views = $edits_views[$wikiPage->getID()] ?? 0;
+			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
+
+			$_SESSION['edits_views'] = $edits_views;
+		}
+
+		if ( $wgSendNewArticleToFriends ) {
+			$title = $wikiPage->getTitle();
+			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
+				$_SESSION['new_opinion'] = $title->getPrefixedText();
+			}
+		}
 	}
 
 	/**
@@ -29,7 +74,7 @@ class MiniInviteHooks {
 	 *
 	 * @return bool
 	 */
-	public static function inviteFriendToEdit( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
+	public static function inviteFriendToEditOld( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
 			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
