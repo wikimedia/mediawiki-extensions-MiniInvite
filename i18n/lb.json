@@ -19,6 +19,8 @@
 	"invite-share-article": "Deelt Ären Artikel mat Äre Frënn!",
 	"invite-my-friends": "Meng Frënn invitéieren",
 	"invite-no-thanks": "Nee, merci",
+	"invite-rate-subject": "$1 proposéiert datt Dir $2 op {{SITENAME}}bewäert",
+	"invite-view-subject": "$1 proposéiert datt Dir *$2* op {{SITENAME}} liest",
 	"invite-friend-to-edit": "E Frënd invitéiere fir z'änneren",
 	"invite-friend-to-read": "E Frënd invitéiere fir ze liesen"
 }

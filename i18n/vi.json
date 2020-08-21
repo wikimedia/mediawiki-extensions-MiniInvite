@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nguyễn Mạnh An"
+		]
+	},
+	"invite-subject": "$1 muốn bạn tham gia {{SITENAME}}!",
+	"invite-email-anon-text": "Vui lòng [[Special:UserLogin|log in]] để gửi email mời.",
+	"invite-more-friends": "Mời thêm bạn bè",
+	"invite-enter-emails": "Nhập email",
+	"invite-customize-subject": "Tiêu đề",
+	"invite-no-thanks": "Không, cảm ơn",
+	"invite-edit-subject": "$1 muốn bạn chỉnh sửa $2 trên {{SITENAME}}",
+	"invite-view-subject": "$1 muốn bạn đọc *$2* trên {{SITENAME}}"
+}
