@@ -34,8 +34,6 @@
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "MiniInviteHooks::onLoadExtensionSchemaUpdates",
-		"PageContentSaveComplete": "MiniInviteHooks::inviteFriendToEdit",
-		"PageContentInsertComplete": "MiniInviteHooks::createOpinionCheck",
 		"OutputPageBeforeHTML": [
 			"MiniInviteHooks::inviteRedirect",
 			"MiniInviteHooks::displayInviteLinks"
