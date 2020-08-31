@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"invite-not-logged-in": "로그인하지 않음",
+	"invite-skip-step": "이 단계 건너뛰기",
+	"invite-sent": "초대장을 보냈습니다!",
+	"invite-back-to-userpage": "&lt; 내 사용자 문서로 돌아가기",
+	"invite-more-friends": "더 많은 친구 초대",
+	"invite-your-friends": "내 친구 초대",
+	"invite-enter-emails": "이메일 입력",
+	"invite-comma-separated": "(여러 주소는 쉼표로 구분)",
+	"invite-customize-email": "내 이메일 사용자 지정",
+	"invite-customize-subject": "제목",
+	"invite-customize-body": "이메일 본문",
+	"invite-customize-send": "이메일 보내기",
+	"invite-my-friends": "내 친구 초대",
+	"invite-edit-subject": "$1님은 당신이 {{SITENAME}}의 $2 문서를 편집해 주길 원합니다",
+	"invite-view-body": "안녕하십니까!\n\n당신의 친구 $1님이 방금 {{SITENAME}}에 새 문서를 작성하였으며 당신이 확인해주길 원하고 있습니다!\n\n보려면 여기를 누르십시오:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마십시오\n\n{{SITENAME}} 팀",
+	"invite-friend-to-edit": "편집을 위해 친구 초대",
+	"invite-friend-to-read": "읽기를 위해 친구 초대"
+}

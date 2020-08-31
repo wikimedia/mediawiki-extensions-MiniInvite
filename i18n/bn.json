@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Titodutta",
 			"আফতাবুজ্জামান"
 		]
 	},
 	"invite-not-logged-in": "আপনি প্রবেশ করেননি",
+	"invite-sent": "আপনার আমন্ত্রন পাঠানো হয়েছে!",
+	"invite-your-friends": "আপনার বন্ধুপরিজনদের আমন্ত্রন জানান",
 	"invite-customize-subject": "বিষয়",
 	"invite-customize-send": "ইমেইল পাঠান",
+	"invite-my-friends": "আমার বন্ধুপরিজনদের আমন্ত্রন জানান",
 	"invite-no-thanks": "না ধন্যবাদ"
 }
