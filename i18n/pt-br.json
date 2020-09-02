@@ -25,6 +25,7 @@
 	"invite-send-new-article-to-friends": "Impressionante. Agora, vamos fazer algumas leituras! Compartilhe seu artigo com seus amigos. Basta clicar abaixo!",
 	"invite-my-friends": "Convidar meus amigos",
 	"invite-no-thanks": "Não, obrigado",
+	"invite-invalid-page": "O nome da página fornecido era inválido ou nenhum nome de página foi fornecido.",
 	"invite-rate-subject": "$1 quer que você avalie $2 em {{SITENAME}}",
 	"invite-edit-subject": "$1 quer que você edite $2 em {{SITENAME}}!",
 	"invite-view-subject": "$1 quer que você leia *$2* em {{SITENAME}}",
