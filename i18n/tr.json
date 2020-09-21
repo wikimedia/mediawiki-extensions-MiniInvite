@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"MuratTheTurkish"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Arkadaşlarınızı vikiye davet etmek için özel bir sayfa]]",
+	"invite-subject": "$1, {{SITENAME}} sitenize katılmanızı istiyor!",
+	"invite-body": "Hey!\n\nArkadaşınız, $1, {{SITENAME}} sitesine katılmanızı istiyor! http://{{SERVERNAME}} adresine kontrol edin\n\nKatılmak için bu bağlantıya tıklayın ve kaydolun!\n$4\n\n{{SITENAME}} Ekibi",
+	"invite-email-anon-text": "Davet e-postaları göndermek için lütfen [[Special:UserLogin|oturum açın]].",
+	"invite-not-logged-in": "Oturum açık değil",
+	"invite-message": "{{SITENAME}} arkadaşlarınızla daha eğlenceli. E-posta adresleri ve bir davetiye iletisi girip \"{{int:invite-custom-send}}\" düğmesini tıklayarak arkadaşlarınızı {{SITE NAME}} sitesine davet edin",
+	"invite-skip-step": "Bunu adımı atla",
+	"invite-sent": "Davetiniz gönderildi!",
+	"invite-back-to-userpage": "&lt; Kullanıcı sayfanıza geri dönün",
+	"invite-sent-thanks": "{{SITENAME}} hakkında bilgi yaydığınız için teşekkürler!",
+	"invite-more-friends": "Daha fazla arkadaş davet et",
+	"invite-your-friends": "Arkadaşlarınızı davet edin",
+	"invite-enter-emails": "E-postaları girin",
+	"invite-comma-separated": "(birden çok adres için virgülle ayrılmış)",
+	"invite-customize-email": "E-postanızı özelleştirin",
+	"invite-customize-subject": "Konu",
+	"invite-customize-body": "E-posta gövdesi",
+	"invite-customize-send": "E-posta gönder",
+	"invite-share-article": "Maddeninizi arkadaşlarınızla paylaşın!",
+	"invite-send-new-article-to-friends": "Harika. Şimdi size biraz okuma alalım! Maddenizi arkadaşlarınızla paylaşın. Aşağıya tıklayın!",
+	"invite-my-friends": "Arkadaşlarımı davet et",
+	"invite-no-thanks": "Hayır teşekkürler",
+	"invite-invalid-page": "Sağlanan sayfa adı geçersizdi veya sayfa adı sağlanmadı.",
+	"invite-rate-subject": "$1, {{SITENAME}} sitesinde $2 derecelendirmenizi istiyor",
+	"invite-edit-subject": "$1, {{SITENAME}} sitesinde $2 düzenlemenizi istiyor",
+	"invite-view-subject": "$1, {{SITENAME}} sitesinde *$2* okumasını istiyor",
+	"invite-edit-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} sitesinde $4 sayfasına düzenlemek için yardımınızı istiyor.\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
+	"invite-rate-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} sitesinde $4 sayfasına derecelendirmek istiyor.\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
+	"invite-view-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} hakkında yeni bir madde yazdı ve bir göz atmanızı istiyor!\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
+	"invite-friend-to-edit": "Bir arkadaşınızı düzenlemeye davet edin",
+	"invite-friend-to-read": "Bir arkadaşınızı okumaya davet edin"
+}
