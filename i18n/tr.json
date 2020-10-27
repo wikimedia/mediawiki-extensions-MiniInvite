@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"MuratTheTurkish"
+			"MuratTheTurkish",
+			"Vito Genovese"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|Arkadaşlarınızı vikiye davet etmek için özel bir sayfa]]",
@@ -30,9 +31,9 @@
 	"invite-rate-subject": "$1, {{SITENAME}} sitesinde $2 derecelendirmenizi istiyor",
 	"invite-edit-subject": "$1, {{SITENAME}} sitesinde $2 düzenlemenizi istiyor",
 	"invite-view-subject": "$1, {{SITENAME}} sitesinde *$2* okumasını istiyor",
-	"invite-edit-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} sitesinde $4 sayfasına düzenlemek için yardımınızı istiyor.\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
-	"invite-rate-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} sitesinde $4 sayfasına derecelendirmek istiyor.\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
-	"invite-view-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} hakkında yeni bir madde yazdı ve bir göz atmanızı istiyor!\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nVe $3 kullanıcısından {{SITENAME}} arkadaşınız olarak $2 eklemeyi unutmayın\n\n{{SITENAME}} Ekibi",
+	"invite-edit-body": "Merhaba!\n\nArkadaşınız $1, {{SITENAME}} sitesinde $4 sayfasını düzenlemek için yardımınızı istiyor.\n\nDüzenlemek için buraya tıklayın:\n\n$5\n\nAyrıca $2 adlı kullanıcıyı $3 bünyesinde {{SITENAME}} arkadaşınız olarak eklemeyi unutmayın.\n\n{{SITENAME}} Ekibi",
+	"invite-rate-body": "Merhaba!\n\nArkadaşınız, $1, {{SITENAME}} sitesinde $4 sayfasını derecelendirmenizi istiyor.\n\nDerecelendirmek için buraya tıklayın:\n\n$5\n\nAyrıca $2 adlı kullanıcıyı $3 bünyesinde {{SITENAME}} arkadaşınız olarak eklemeyi unutmayın.\n\n{{SITENAME}} Ekibi",
+	"invite-view-body": "Merhaba!\n\nArkadaşınız $1, {{SITENAME}} hakkında yeni bir madde yazdı ve bir göz atmanızı istiyor!\n\nGörmek için şuraya tıklayın:\n\n$5\n\nAyrıca $2 kullanıcıyı $3 kapsamında {{SITENAME}} arkadaşınız olarak eklemeyi unutmayın.\n\n{{SITENAME}} Ekibi",
 	"invite-friend-to-edit": "Bir arkadaşınızı düzenlemeye davet edin",
 	"invite-friend-to-read": "Bir arkadaşınızı okumaya davet edin"
 }
