@@ -5,7 +5,7 @@
 class UserEmailTrack {
 
 	/**
-	 * @var User $user
+	 * @var User
 	 */
 	private $user;
 
