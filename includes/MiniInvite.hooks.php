@@ -51,6 +51,7 @@ class MiniInviteHooks {
 
 		if ( $wgSendNewArticleToFriends ) {
 			$title = $wikiPage->getTitle();
+			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
 				$_SESSION['new_opinion'] = $title->getPrefixedText();
 			}
@@ -109,6 +110,7 @@ class MiniInviteHooks {
 
 		if ( $wgSendNewArticleToFriends ) {
 			$title = $wikiPage->getTitle();
+			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
 				$_SESSION['new_opinion'] = $title->getPrefixedText();
 			}
