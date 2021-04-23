@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserIdentity;
 
 class MiniInviteHooks {
@@ -160,16 +161,18 @@ class MiniInviteHooks {
 		// page ID is not set when creating a new page (obviously), so using $wikiPage->getID()
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
+		// @phan-suppress-next-line PhanCoalescingNeverNull
 		$pageId = $wikiPage->getID() ?? 0;
 		$page_edits_views = $edits_views[$pageId] ?? 0;
 
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
 		if ( $page_edits_views == 1 && $user->isLoggedIn() ) {
 			$s .= '<span id="invite_to_edit" class="edit">';
-			$s .= Linker::link(
+			$s .= $linkRenderer->makeKnownLink(
 				$invite_title,
-				wfMessage( 'invite-friend-to-edit' )->escaped(),
+				wfMessage( 'invite-friend-to-edit' )->text(),
 				[],
 				[ 'email_type' => 'edit', 'page' => $t->getText() ]
 			);
@@ -182,9 +185,9 @@ class MiniInviteHooks {
 		// Oh, maybe it conflicts with wfInviteRedirect()? Not sure, @todo CHECKME
 		if ( isset( $_SESSION['new_opinion'] ) && $_SESSION['new_opinion'] == 1 ) {
 			$s .= '<span id="invite_to_read" class="edit">';
-			$s .= Linker::link(
+			$s .= $linkRenderer->makeKnownLink(
 				$invite_title,
-				wfMessage( 'invite-friend-to-read' )->escaped(),
+				wfMessage( 'invite-friend-to-read' )->text(),
 				[],
 				[ 'email_type' => 'view', 'page' => $t->getText() ]
 			);
