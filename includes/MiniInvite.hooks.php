@@ -168,7 +168,7 @@ class MiniInviteHooks {
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
 		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 
-		if ( $page_edits_views == 1 && $user->isLoggedIn() ) {
+		if ( $page_edits_views == 1 && $user->isRegistered() ) {
 			$s .= '<span id="invite_to_edit" class="edit">';
 			$s .= $linkRenderer->makeKnownLink(
 				$invite_title,

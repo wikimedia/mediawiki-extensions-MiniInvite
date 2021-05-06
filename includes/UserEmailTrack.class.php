@@ -33,7 +33,7 @@ class UserEmailTrack {
 	 * @param string $page_title
 	 */
 	public function track_email( $type, $count, $page_title = '' ) {
-		if ( $this->user->isLoggedIn() ) {
+		if ( $this->user->isRegistered() ) {
 			$dbw = wfGetDB( DB_MASTER );
 			$dbw->insert(
 				'user_email_track',

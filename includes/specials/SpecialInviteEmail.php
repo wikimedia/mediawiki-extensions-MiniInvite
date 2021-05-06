@@ -97,7 +97,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 			$html = '';
 
-			if ( $user->isLoggedIn() ) {
+			if ( $user->isRegistered() ) {
 				$html .= '<div class="invite-links">';
 				$html .= $linkRenderer->makeLink(
 					$user->getUserPage(),
