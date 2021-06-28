@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Revision\RevisionRecord;
 use MediaWiki\User\UserIdentity;
 
 class MiniInviteHooks {
@@ -70,13 +71,13 @@ class MiniInviteHooks {
 	 * @param null $isWatch
 	 * @param null $section
 	 * @param int $flags
-	 * @param Revision $revision
+	 * @param RevisionRecord $revision
 	 * @param Status $status
 	 * @param int|bool $baseRevId
 	 *
 	 * @return bool
 	 */
-	public static function inviteFriendToEditOld( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, $revision, $status, $baseRevId ) {
+	public static function inviteFriendToEditOld( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, RevisionRecord $revision, $status, $baseRevId ) {
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
 			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
@@ -104,9 +105,9 @@ class MiniInviteHooks {
 	 * @param null $isWatch
 	 * @param null $section
 	 * @param int $flags
-	 * @param Revision $revision
+	 * @param RevisionRecord $revision
 	 */
-	public static function createOpinionCheck( $wikiPage, User $user, $content, $summary, $isMinor, $isWatch, $section, $flags, Revision $revision ) {
+	public static function createOpinionCheck( $wikiPage, User $user, $content, $summary, $isMinor, $isWatch, $section, $flags, RevisionRecord $revision ) {
 		global $wgSendNewArticleToFriends;
 
 		if ( $wgSendNewArticleToFriends ) {
@@ -134,8 +135,9 @@ class MiniInviteHooks {
 	}
 
 	public static function displayInviteLinks( OutputPage &$out, &$text ) {
+		$t = $out->getTitle();
 		// We need a WikiPage in order to get the page ID
-		if ( !$out->canUseWikiPage() ) {
+		if ( !$t->canExist() ) {
 			return true;
 		}
 
@@ -143,10 +145,7 @@ class MiniInviteHooks {
 			// To avoid "undefined <whatever variable/offset/etc.>" bullshit
 			return true;
 		}
-
-		$t = $out->getTitle();
 		$user = $out->getUser();
-		$wikiPage = $out->getWikiPage();
 		$s = ''; // the stuff that should be shown to the end-user
 
 		if (
@@ -158,11 +157,10 @@ class MiniInviteHooks {
 		}
 
 		$edits_views = $_SESSION['edits_views'];
-		// page ID is not set when creating a new page (obviously), so using $wikiPage->getID()
+		// page ID is not set when creating a new page (obviously), so using $t->getID()
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
-		// @phan-suppress-next-line PhanCoalescingNeverNull
-		$pageId = $wikiPage->getID() ?? 0;
+		$pageId = $t->getArticleID();
 		$page_edits_views = $edits_views[$pageId] ?? 0;
 
 		$invite_title = SpecialPage::getTitleFor( 'InviteEmail' );
@@ -177,7 +175,7 @@ class MiniInviteHooks {
 				[ 'email_type' => 'edit', 'page' => $t->getText() ]
 			);
 			$s .= '</span>';
-			$edits_views[$wikiPage->getID()] = $page_edits_views + 1;
+			$edits_views[$t->getArticleID()] = $page_edits_views + 1;
 			$_SESSION['edits_views'] = $edits_views;
 		}
 
