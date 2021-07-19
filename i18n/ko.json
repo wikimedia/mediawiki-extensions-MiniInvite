@@ -17,6 +17,7 @@
 	"invite-customize-body": "이메일 본문",
 	"invite-customize-send": "이메일 보내기",
 	"invite-my-friends": "내 친구 초대",
+	"invite-no-thanks": "괜찮습니다",
 	"invite-edit-subject": "$1님은 당신이 {{SITENAME}}의 $2 문서를 편집해 주길 원합니다",
 	"invite-view-body": "안녕하십니까!\n\n당신의 친구 $1님이 방금 {{SITENAME}}에 새 문서를 작성하였으며 당신이 확인해주길 원하고 있습니다!\n\n보려면 여기를 누르십시오:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마십시오\n\n{{SITENAME}} 팀",
 	"invite-friend-to-edit": "편집을 위해 친구 초대",
