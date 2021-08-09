@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Спеціальна сторінка для запрошення ваших друзів приєднатися до вікі]]",
+	"invite-subject": "$1 хоче, щоб ви приєдналися до {{SITENAME}}!",
+	"invite-body": "Агов!\n\nВаш друг, $1, хоче, щоб ви приєдналися до {{SITENAME}}! Перевірте це на http://{{SERVERNAME}}\n\nЩоб приєднатися, просто натисніть це посилання та зареєструйтесь!\n$4\n\nКоманда {{SITENAME}}",
+	"invite-email-anon-text": "Будь ласка, [[Special:UserLogin|увійдіть]], щоб надіслати запрошення електронною поштою.",
+	"invite-not-logged-in": "Не увійшли до системи",
+	"invite-message": "{{SITENAME}}- веселіше з друзями. Запросіть своїх друзів приєднатися до {{SITE NAME}}, просто ввівши адреси електронної пошти та запрошення та натиснувши клавішу \"{{int:invite-customize-send}}\"",
+	"invite-skip-step": "Пропустити цей крок",
+	"invite-sent": "Ваше запрошення надіслано!",
+	"invite-back-to-userpage": "< Поверніться на сторінку користувача",
+	"invite-sent-thanks": "Дякуємо, що поширили інформацію про {{SITENAME}}!",
+	"invite-more-friends": "Запросити більше друзів",
+	"invite-your-friends": "Запросити ваших друзів",
+	"invite-enter-emails": "Введіть електронні листи",
+	"invite-comma-separated": "(кома для кількох адрес)",
+	"invite-customize-email": "Налаштуйте свою електронну пошту",
+	"invite-customize-subject": "Тема",
+	"invite-customize-body": "Текст електронної пошти",
+	"invite-customize-send": "Надіслати листа",
+	"invite-share-article": "Поділіться своєю статтею з друзями!",
+	"invite-send-new-article-to-friends": "Чудово. А тепер давайте почитаємо! Поділіться своєю статтею з друзями. Просто натисніть нижче!",
+	"invite-my-friends": "Запросити моїх друзів",
+	"invite-no-thanks": "Ні, дякую",
+	"invite-invalid-page": "Або надана назва сторінки була недійсною, або не було вказано жодної назви сторінки.",
+	"invite-rate-subject": "$1 хоче, щоб ви оцінили $2 на {{SITENAME}}",
+	"invite-edit-subject": "$1 хоче, щоб ви відредагували $2 на {{SITENAME}}",
+	"invite-view-subject": "$1 хоче, щоб ви прочитали *$2* на {{SITENAME}}",
+	"invite-edit-body": "Привіт!\n\nВаш друг, $1, хоче вашої допомоги у редагуванні $4 на {{SITENAME}}.\n\nНатисніть тут для редагування:\n\n$5\n\nІ не забудьте додати $2 як друга {{SITENAME}} за $3.\n\nКоманда {{SITENAME}}",
+	"invite-rate-body": "Привіт!\n\nВаш друг, $1, хоче, щоб ви оцінили $4 на {{SITENAME}}.\n\nНатисніть тут, щоб оцінити:\n\n$5\n\nІ не забудьте додати $2 як друга {{SITENAME}} за $3\n\nКоманда {{SITENAME}}",
+	"invite-view-body": "Привіт!\n\nВаш друг, $1, щойно написав нову статтю на {{SITENAME}}, і хоче, щоб ви це перевірили!\n\nClick here to view:\n\n$5\n\nІ не забудьте додати $2 як ваш {{SITENAME}} друг, за $3\n\nКоманда {{SITENAME}}",
+	"invite-friend-to-edit": "Запросити друга відредагувати",
+	"invite-friend-to-read": "Запросити друга прочитати"
+}
