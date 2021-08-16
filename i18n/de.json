@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elliot"
+			"Elliot",
+			"Zabe"
 		]
 	},
+	"invite-not-logged-in": "Nicht angemeldet",
+	"invite-skip-step": "Diesen Schritt überspringen",
 	"invite-your-friends": "Lade deine Freunde ein",
 	"invite-enter-emails": "E-Mails eingeben",
 	"invite-customize-subject": "Betreff",
