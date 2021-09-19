@@ -12,7 +12,7 @@
 	"type": "specialpage",
 	"callback": "MiniInviteHooks::registerExtension",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.35.3"
 	},
 	"config": {
 		"SendNewArticleToFriends": false

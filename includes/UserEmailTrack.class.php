@@ -34,7 +34,7 @@ class UserEmailTrack {
 	 */
 	public function track_email( $type, $count, $page_title = '' ) {
 		if ( $this->user->isRegistered() ) {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$dbw->insert(
 				'user_email_track',
 				[
