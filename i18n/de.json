@@ -8,6 +8,7 @@
 	},
 	"invite-not-logged-in": "Nicht angemeldet",
 	"invite-skip-step": "Diesen Schritt überspringen",
+	"invite-sent": "Deine Einladung wurde versandt!",
 	"invite-your-friends": "Lade deine Freunde ein",
 	"invite-enter-emails": "E-Mails eingeben",
 	"invite-customize-subject": "Betreff",
@@ -17,5 +18,6 @@
 	"invite-my-friends": "Meine Freunde einladen",
 	"invite-no-thanks": "Nein danke",
 	"invite-edit-subject": "$1 möchte, dass du $2 von {{SITENAME}} bearbeitest",
-	"invite-view-body": "Hallo!\n\nDein Freund, $1, hat gerade einen neuen Artikel auf {{Seitenname}} geschrieben und möchte, dass du ihn dir ansiehst!\n\nKlicke hier um ihn anzusehen:\n\n$5\n\nUnd bitte vergiss nicht $2 als deinen {{Seitenname}} Freund hinzuzufügen, \nvon $3\nDas {{Seitenname}} Team"
+	"invite-view-body": "Hallo!\n\nDein Freund, $1, hat gerade einen neuen Artikel auf {{Seitenname}} geschrieben und möchte, dass du ihn dir ansiehst!\n\nKlicke hier um ihn anzusehen:\n\n$5\n\nUnd bitte vergiss nicht $2 als deinen {{Seitenname}} Freund hinzuzufügen, \nvon $3\nDas {{Seitenname}} Team",
+	"invite-friend-to-edit": "Einen Feund zum Bearbeiten einladen"
 }
