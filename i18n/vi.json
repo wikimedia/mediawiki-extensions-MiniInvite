@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nguyễn Mạnh An"
+			"Nguyễn Mạnh An",
+			"Minh Nguyen"
 		]
 	},
 	"invite-subject": "$1 muốn bạn tham gia {{SITENAME}}!",
@@ -10,6 +11,6 @@
 	"invite-enter-emails": "Nhập email",
 	"invite-customize-subject": "Tiêu đề",
 	"invite-no-thanks": "Không, cảm ơn",
-	"invite-edit-subject": "$1 muốn bạn chỉnh sửa $2 trên {{SITENAME}}",
+	"invite-edit-subject": "$1 muốn bạn sửa đổi $2 trên {{SITENAME}}",
 	"invite-view-subject": "$1 muốn bạn đọc *$2* trên {{SITENAME}}"
 }
