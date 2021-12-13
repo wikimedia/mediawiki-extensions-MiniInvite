@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer"
+		]
+	},
+	"invite-customize-subject": "موضوع",
+	"invite-customize-body": "متن ایمیل",
+	"invite-customize-send": "ارسال ایمیل",
+	"invite-no-thanks": "نه ممنون"
+}

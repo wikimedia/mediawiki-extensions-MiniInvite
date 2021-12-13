@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Eng Spezialsäit fir Är Frënn z'invitéiere bei der Wiki matzemaachen]]",
+	"invite-subject": "$1 proposéiert datt Dir bei {{SITENAME}} matmaacht",
+	"invite-not-logged-in": "Net ageloggt",
+	"invite-skip-step": "Dëse Schrëtt iwwersprangen",
+	"invite-sent": "Är Invitatioun gouf geschéckt!",
+	"invite-back-to-userpage": "&lt; Zréck op Är Benotzersäit",
+	"invite-sent-thanks": "Merci fir d'Verbreede vun Informatiounen iwwer {{SITENAME}}!",
+	"invite-more-friends": "Méi Frënn invitéieren",
+	"invite-your-friends": "Invitéiert Är Frënn",
+	"invite-enter-emails": "E-Mail-Adressen aginn",
+	"invite-comma-separated": "(kommagetrennt fir méi Adressen)",
+	"invite-customize-email": "Personaliséiert Är E-Mail",
+	"invite-customize-subject": "Sujet",
+	"invite-customize-send": "E-Mail schécken",
+	"invite-share-article": "Deelt Ären Artikel mat Äre Frënn!",
+	"invite-my-friends": "Meng Frënn invitéieren",
+	"invite-no-thanks": "Nee, merci",
+	"invite-rate-subject": "$1 proposéiert datt Dir $2 op {{SITENAME}} bewäert",
+	"invite-edit-subject": "$1 proposéiert datt Dir $2 op {{SITENAME}} ännert",
+	"invite-view-subject": "$1 proposéiert datt Dir *$2* op {{SITENAME}} liest",
+	"invite-friend-to-edit": "E Frënd invitéiere fir z'änneren",
+	"invite-friend-to-read": "E Frënd invitéiere fir ze liesen"
+}

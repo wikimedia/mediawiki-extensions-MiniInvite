@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Usingha"
+		]
+	},
+	"invite-email-anon-text": "[[Special:UserLogin|হমিয়া]] তি ইমেইল বার্তন দিয়া পেঠা।",
+	"invite-not-logged-in": "না হমাসত",
+	"invite-sent": "তর বার্তনহান দিয়াপেঠেইলাঙ!",
+	"invite-sent-thanks": "{{SITENAME}}র বারে মাতানিরকা থাকাত!",
+	"invite-your-friends": "তর মারুপরে বার্তন দে",
+	"invite-enter-emails": "ইমেইলহানি দে",
+	"invite-customize-subject": "বিষয়",
+	"invite-customize-send": "ইমেইল দিয়া পেঠা",
+	"invite-my-friends": "মর মারুপরে বার্তন দে",
+	"invite-no-thanks": "থাকাত নাদুরি",
+	"invite-friend-to-edit": "মারুপরে বার্তন দে পতানির কা"
+}

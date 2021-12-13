@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Շահէն"
+		]
+	},
+	"invite-not-logged-in": "Դուք մուտք չէք գործած համակարգ",
+	"invite-sent": "Հրաւէրդ ղրկուա՛ծ է",
+	"invite-your-friends": "Հրաւիրէ՛ բարեկամներդ",
+	"invite-enter-emails": "Մուտքագրէ իմակի հասցէդ",
+	"invite-customize-subject": "Նիւթ",
+	"invite-customize-send": "Ղրկէ իմակ",
+	"invite-no-thanks": "Ոչ, շնորհակալ եմ:"
+}
