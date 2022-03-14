@@ -6,9 +6,9 @@
 		]
 	},
 	"invite-subject": "$1 muốn bạn tham gia {{SITENAME}}!",
-	"invite-email-anon-text": "Vui lòng [[Special:UserLogin|log in]] để gửi email mời.",
+	"invite-email-anon-text": "Vui lòng [[Special:UserLogin|đăng nhập]] để gửi bức thư điện tử mời.",
 	"invite-more-friends": "Mời thêm bạn bè",
-	"invite-enter-emails": "Nhập email",
+	"invite-enter-emails": "Nhập các địa chỉ thư điện tử",
 	"invite-customize-subject": "Tiêu đề",
 	"invite-no-thanks": "Không, cảm ơn",
 	"invite-edit-subject": "$1 muốn bạn sửa đổi $2 trên {{SITENAME}}",
