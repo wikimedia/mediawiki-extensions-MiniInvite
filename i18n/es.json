@@ -2,9 +2,26 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"MarcoAurelio"
+			"MarcoAurelio",
+			"DiegoAmbrocio"
 		]
 	},
+	"invite-not-logged-in": "No ha iniciado sesión",
+	"invite-skip-step": "Omitir este paso",
+	"invite-sent": "Su invitación ha sido enviada.",
+	"invite-more-friends": "Invitar a más amigos",
+	"invite-your-friends": "Invita a tus amigos",
+	"invite-enter-emails": "Introduzca los correos electrónicos",
+	"invite-comma-separated": "(separados por comas para direcciones múltiples)",
+	"invite-customize-email": "Personalice su correo electrónico",
 	"invite-customize-subject": "Asunto",
-	"invite-no-thanks": "No, gracias"
+	"invite-customize-body": "Cuerpo del correo electrónico",
+	"invite-customize-send": "Envía un correo electrónico",
+	"invite-share-article": "Comparta su artículo con sus amigos.",
+	"invite-send-new-article-to-friends": "Espectacular. Ahora, ¡vamos a conseguir algunas lecturas! Comparte tu artículo con tus amigos. Sólo tienes que hacer clic abajo.",
+	"invite-my-friends": "Invitar a mis amigos",
+	"invite-no-thanks": "No, gracias",
+	"invite-invalid-page": "El nombre de la página suministrado no es válido, o no se ha suministrado ningún nombre de página.",
+	"invite-friend-to-edit": "Invitar a un amigo a editar",
+	"invite-friend-to-read": "Invitar a un amigo a leer"
 }
