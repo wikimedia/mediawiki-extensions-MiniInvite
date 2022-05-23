@@ -1,9 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"StarrySky",
 			"沈澄心"
 		]
 	},
+	"invite-desc": "[[Special:InviteEmail|邀请好友加入wiki的特殊页面]]",
+	"invite-subject": "$1想让您加入{{SITENAME}}!",
 	"invite-not-logged-in": "未登录",
-	"invite-more-friends": "邀请更多朋友"
+	"invite-skip-step": "跳过此步",
+	"invite-more-friends": "邀请更多朋友",
+	"invite-customize-send": "发送电子邮件",
+	"invite-share-article": "与朋友分享您的条目！",
+	"invite-my-friends": "邀请我的朋友",
+	"invite-no-thanks": "不用了，谢谢"
 }
