@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Un pagina special pro invitar tu amicos a adherer al wiki]]",
+	"invite-subject": "$1 vole que tu adhere a {{SITENAME}}!",
+	"invite-body": "Salute!\n\nTu amico, $1, vole que tu adhere a {{SITENAME}}! Jecta un oculata a http://{{SERVERNAME}}\n\nPro adherer, clicca sur le ligamine e crea un conto!\n$4\n\nLe equipa de {{SITENAME}}",
+	"invite-email-anon-text": "Per favor [[Special:UserLogin|aperi session]] pro inviar messages de invitation.",
+	"invite-not-logged-in": "Tu non ha aperite session",
+	"invite-message": "{{SITENAME}} es plus amisante con tu amicos. Invita tu amicos a adherer a {{SITENAME}} inserente adresses de e-mail e un message de invitation e cliccante \"{{int:invite-customize-send}}\".",
+	"invite-skip-step": "Saltar iste passo",
+	"invite-sent": "Tu invitation ha essite inviate!",
+	"invite-back-to-userpage": "&lt; Retornar a tu pagina de usator",
+	"invite-sent-thanks": "Gratias pro diffunder le parola sur {{SITENAME}}!",
+	"invite-more-friends": "Invitar plus amicos",
+	"invite-your-friends": "Invitar tu amicos",
+	"invite-enter-emails": "Insere adresses de e-mail",
+	"invite-comma-separated": "(separa plure adresses per commas)",
+	"invite-customize-email": "Personalisa tu message",
+	"invite-customize-subject": "Subjecto",
+	"invite-customize-body": "Texto del message",
+	"invite-customize-send": "Inviar e-mail",
+	"invite-share-article": "Condivide tu articulo con tu amicos!",
+	"invite-send-new-article-to-friends": "Brillante. Ma un articulo debe esser legite! Condivide tu articulo con tu amicos. Simplemente clicca hic infra!",
+	"invite-my-friends": "Invitar mi amicos",
+	"invite-no-thanks": "No, gratias",
+	"invite-invalid-page": "O le nomine de pagina fornite non es valide, o nulle nomine de pagina ha essite fornite,",
+	"invite-rate-subject": "$1 vole que tu evaluta $2 sur {{SITENAME}}",
+	"invite-edit-subject": "$1 vole que tu modifica $2 sur {{SITENAME}}",
+	"invite-view-subject": "$1 vole que tu lege *$2* sur {{SITENAME}}",
+	"invite-edit-body": "Salute!\n\nTu amico, $1, vole tu adjuta in modificar $4 sur {{SITENAME}}.\n\nClicca hic pro modificar:\n\n$5\n\nE non oblida de adder $2 como tu amico de {{SITENAME}}, sur $3\n\nLe equipa de {{SITENAME}}",
+	"invite-rate-body": "Salute!\n\nTu amico, $1, vole que tu evaluta $4 sur {{SITENAME}}.\n\nClicca hic pro evalutar:\n\n$5\n\nE non oblida de adder $2 como tu amico de {{SITENAME}}, sur $3\n\nLe equipa de {{SITENAME}}",
+	"invite-view-body": "Salute!\n\nTu amico, $1, veni de scriber un nove articulo sur {{SITENAME}} e vole que tu lo da un lectura!\n\nClicca hic pro leger:\n\n$5\n\nE non oblida de adder $2 como tu amico de {{SITENAME}}, sur $3\n\nLe equipa de {{SITENAME}}",
+	"invite-friend-to-edit": "Invitar un amico a modificar",
+	"invite-friend-to-read": "Invitar un amico a leger"
+}
