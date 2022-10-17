@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Uma página especial para convidar os seus amigos a aderir à wiki]]",
+	"invite-subject": "$1 convida-o a aderir à wiki {{SITENAME}}!",
+	"invite-body": "Olá!\n\nO seu amigo, $1, quer convidá-lo a aderir à wiki {{SITENAME}}! Venha conhecê-la em http://{{SERVERNAME}}\n\nPara aderir, clique nesta hiperligação e registe-se!\n$4\n\nA equipa da wiki {{SITENAME}}",
+	"invite-email-anon-text": "[[Special:UserLogin|Inicie uma sessão]] para enviar convites por correio eletrónico, por favor.",
+	"invite-not-logged-in": "Não tem sessão iniciada",
+	"invite-message": "A wiki {{SITENAME}} é mais divertida com os seus amigos. Convide-os para aderir, inserindo simplesmente endereços de correio eletrónico e uma mensagem de convite e clicando \"{{int:invite-customize-send}}\"",
+	"invite-skip-step": "Saltar este passo",
+	"invite-sent": "O seu convite foi enviado!",
+	"invite-back-to-userpage": "&lt; Voltar à sua página de utilizador",
+	"invite-sent-thanks": "Obrigado por divulgar a wiki {{SITENAME}}!",
+	"invite-more-friends": "Convidar mais amigos",
+	"invite-your-friends": "Convidar os seus amigos",
+	"invite-enter-emails": "Introduzir correios eletrónicos",
+	"invite-comma-separated": "(separados por vírgula, no caso de vários endereços)",
+	"invite-customize-email": "Personalizar a sua mensagem",
+	"invite-customize-subject": "Assunto",
+	"invite-customize-body": "Corpo da mensagem",
+	"invite-customize-send": "Enviar correio eletrónico",
+	"invite-share-article": "Partilhe o seu artigo com os amigos!",
+	"invite-send-new-article-to-friends": "Muito bem. Agora, vamos arranjar-lhe alguns leitores! Partilhe o artigo com os seus amigos. Basta clicar abaixo!",
+	"invite-my-friends": "Convidar os meus amigos",
+	"invite-no-thanks": "Não, obrigado",
+	"invite-invalid-page": "O nome de página fornecido era inválido ou não foi fornecido nenhum nome de página.",
+	"invite-rate-subject": "$1 pede que avalie a página $2 na wiki {{SITENAME}}",
+	"invite-edit-subject": "$1 pede que avalie a página $2 na wiki {{SITENAME}}",
+	"invite-view-subject": "$1 pede que leia a página $2 na wiki {{SITENAME}}",
+	"invite-edit-body": "Olá!\n\nO seu amigo, $1, pede a sua ajuda na edição da página $4 na wiki {{SITENAME}}.\n\nClique aqui para editar:\n\n$5\n\nNão se esqueça de adicionar $2 aos seus amigos da wiki, em $3\n\nA equipa da wiki {{SITENAME}}",
+	"invite-rate-body": "Olá!\n\nO seu amigo, $1, pede que avalie a página $4 na wiki {{SITENAME}}.\n\nClique aqui para avaliar:\n\n$5\n\nNão se esqueça de adicionar $2 aos seus amigos da wiki, em $3\n\nA equipa da wiki {{SITENAME}}",
+	"invite-view-body": "Olá!\n\nO seu amigo, $1, acaba de escrever um artigo novo na wiki {{SITENAME}} e quer que o veja!\n\nClique aqui para ver:\n\n$5\n\nNão se esqueça de adicionar $2 aos seus amigos da wiki, em $3\n\nA equipa da wiki {{SITENAME}}",
+	"invite-friend-to-edit": "Convidar a um amigo a editar",
+	"invite-friend-to-read": "Convidar a um amigo a ler"
+}
