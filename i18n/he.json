@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"invite-customize-subject": "נושא",
+	"invite-customize-body": "גוף הדוא\"ל",
+	"invite-customize-send": "שליחת דוא\"ל",
+	"invite-no-thanks": "לא, תודה"
+}
