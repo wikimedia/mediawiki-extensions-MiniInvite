@@ -72,6 +72,7 @@ class InviteEmail extends UnlistedSpecialPage {
 			foreach ( $addresses as $address ) {
 				$to = trim( $address );
 				if ( Sanitizer::validateEmail( $to ) ) {
+					// @phan-suppress-next-line SecurityCheck-XSS UserMailer::send defaults to text/plain if passed a string
 					$mailResult = UserMailer::send(
 						new MailAddress( $to ),
 						new MailAddress( $this->from ),
@@ -223,7 +224,7 @@ class InviteEmail extends UnlistedSpecialPage {
 		$out->setPageTitle( $this->msg( 'invite-your-friends' )->text() );
 
 		$this->email_type = $request->getVal( 'email_type' );
-		$this->page = $request->getVal( 'page' );
+		$this->page = $request->getVal( 'page', '' );
 
 		$email = $this->getInviteEmailContent( $this->email_type );
 
