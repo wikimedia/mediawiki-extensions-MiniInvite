@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Specialus puslapis, skirtas pakviesti draugus prisijungti prie viki]]",
+	"invite-subject": "$1 nori, kad prisijungtumėte prie {{SITENAME}}!",
+	"invite-body": "Sveiki!\n\nJūsų draugas $1 nori, kad prisijungtumėte prie {{SITENAME}}! Žiūrėkite http://{{SERVERNAME}}\n\nKad prisijungtumėte, tiesiog paspauskite nuorodą ir užsiregistruokite!\n\n$4\n\n{{SITENAME}} komanda",
+	"invite-email-anon-text": "Prašome [[Special:UserLogin|prisijungti]], kad išsiųstumėte kvietimų el. laiškus.",
+	"invite-not-logged-in": "Neprisijungęs",
+	"invite-message": "{{SITENAME}} yra smagiau su draugais. Pakvieskite savo draugus prisijungti prie {{SITENAME}} tiesiog įvesdami el. pašto adresus ir pakvietimo pranešimą bei spustelėdami „{{int:invite-customize-send}}“",
+	"invite-skip-step": "Praleisti šį žingsnį",
+	"invite-sent": "Jūsų kvietimas išsiųstas!",
+	"invite-back-to-userpage": "&lt; Grįžti į savo naudotojo puslapį",
+	"invite-sent-thanks": "Dėkojame, kad skleidžiate žinią apie {{SITENAME}}!",
+	"invite-more-friends": "Pakviesti daugiau draugų",
+	"invite-your-friends": "Pakvieskite savo draugus",
+	"invite-enter-emails": "Įveskite el. paštus",
+	"invite-comma-separated": "(keli adresai atskiriami kableliais)",
+	"invite-customize-email": "Tinkinkite savo el. paštą",
+	"invite-customize-subject": "Antraštė",
+	"invite-customize-body": "El. laiško tekstas",
+	"invite-customize-send": "Siųsti el. laišką",
+	"invite-share-article": "Pasidalinkite savo straipsniu su draugais!",
+	"invite-send-new-article-to-friends": "Nuostabu. Dabar surinkime peržiūrų! Pasidalinkite savo straipsniu su draugais. Tiesiog spustelėkite žemiau!",
+	"invite-my-friends": "Pakviesti mano draugus",
+	"invite-no-thanks": "Ne, ačiū",
+	"invite-invalid-page": "Pateiktas puslapio pavadinimas buvo neteisingas, arba nepateiktas joks puslapio pavadinimas.",
+	"invite-rate-subject": "$1 nori, kad įvertintumėte $2 {{SITENAME}}",
+	"invite-edit-subject": "$1 nori, kad redaguotumėte $2 {{SITENAME}}",
+	"invite-view-subject": "$1 nori, kad perskaitytumėte *$2* {{SITENAME}}",
+	"invite-edit-body": "Sveiki!\n\nJūsų draugas $1 nori jūsų pagalbos redaguojant $4 {{SITENAME}}.\n\nJei norite redaguoti, spustelėkite čia:\n\n$5\n\nIr nepamirškite pridėti $2 kaip savo {{SITENAME}} draugo, $3 \n\n{{SITENAME}} komanda",
+	"invite-rate-body": "Sveiki!\n\nJūsų draugas $1 nori, kad įvertintumėte $4 {{SITENAME}}.\n\nJei norite įvertinti, spustelėkite čia:\n\n$5\n\nIr nepamirškite pridėti $2 kaip savo {{SITENAME}} draugo, $3 \n\n{{SITENAME}} komanda",
+	"invite-view-body": "Sveiki!\n\nJūsų draugas $1 ką tik parašė naują straipsnį {{SITENAME}} ir nori, kad jį pamatytumėte.\n\nJei norite peržiūrėti, spustelėkite čia:\n\n$5\n\nIr nepamirškite pridėti $2 kaip savo {{SITENAME}} draugo, $3 \n\n{{SITENAME}} komanda",
+	"invite-friend-to-edit": "Pakvieskite draugą redaguoti",
+	"invite-friend-to-read": "Pakvieskite draugą perskaityti"
+}
