@@ -1,10 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1"
 		]
 	},
+	"invite-desc": "[[Special: InviteEmail | صفحة خاصة لدعوة أصدقائك للانضمام إلى wiki]]",
+	"invite-subject": "يريد $1 أن تنضم إلى {{SITENAME}}!",
+	"invite-body": "مرحبًا !! N !! N! صديقك ، $1 ، يريدك أن تنضم إلى {{SITENAME}}! تحقق من ذلك على http: // {{SERVERNAME}}! N !! N! للانضمام ، ما عليك سوى النقر فوق هذا الارتباط والاشتراك !! N! $4 ! N !! N! فريق {{SITENAME}}",
+	"invite-email-anon-text": "يرجى [[Special: UserLogin | تسجيل الدخول]] لإرسال رسائل البريد الإلكتروني للدعوة.",
+	"invite-not-logged-in": "غير مسجل الدخول",
+	"invite-message": "{{SITENAME}} أكثر إمتاعًا مع أصدقائك. قم بدعوة أصدقائك للانضمام إلى {{SITENAME}} عن طريق إدخال عناوين البريد الإلكتروني ورسالة الدعوة والنقر على \"{{int: calling-custom-send}}\"",
+	"invite-skip-step": "تخطي هذه الخطوة",
+	"invite-sent": "تم إرسال دعوتك!",
+	"invite-back-to-userpage": "<العودة إلى صفحة المستخدم الخاصة بك",
+	"invite-sent-thanks": "شكرًا لنشر الخبر عن {{SITENAME}}!",
+	"invite-more-friends": "ادعو المزيد من الاصدقاء",
+	"invite-your-friends": "اعزم أصحابك",
 	"invite-enter-emails": "أدخل عنوان البريد الإلكتروني",
+	"invite-comma-separated": "(مفصولة بفاصلة لعناوين متعددة)",
+	"invite-customize-email": "تخصيص بريدك الإلكتروني",
 	"invite-customize-subject": "الموضوع",
-	"invite-no-thanks": "لا شكرًا"
+	"invite-customize-body": "هيئة البريد الإلكتروني",
+	"invite-customize-send": "ارسل بريد الكتروني",
+	"invite-share-article": "شارك مقالك مع أصدقائك!",
+	"invite-send-new-article-to-friends": "مذهل. الآن ، دعنا نحضر لك بعض القراءات! شارك مقالك مع أصدقائك. فقط انقر أدناه!",
+	"invite-my-friends": "ادعُ أصدقائي",
+	"invite-no-thanks": "لا شكرًا",
+	"invite-invalid-page": "إما أن اسم الصفحة المقدم غير صالح ، أو أنه لم يتم توفير اسم صفحة.",
+	"invite-rate-subject": "يريد $1 منك تقييم $2 على {{SITENAME}}",
+	"invite-edit-subject": "يريد $1 منك تعديل $2 على {{SITENAME}}",
+	"invite-view-subject": "يريد $1 أن تقرأ * $2 * على {{SITENAME}}",
+	"invite-edit-body": "مرحبًا !! N !! N! صديقك ، $1 ، يريد مساعدتك في تحرير $4 على {{SITENAME}}.! N !! N! انقر هنا للتحرير:! N !! N! $5 ! N !! N! ولا تنس إضافة $2 كصديق {{SITENAME}} ، بسعر $3 ! N !! N! فريق {{SITENAME}}",
+	"invite-rate-body": "مرحبًا !! N !! N! صديقك ، $1 ، يريد منك تقييم $4 على {{SITENAME}}.! N !! N! انقر هنا للتقييم:! N !! N! $5 ! N !! N! ولا تنس إضافة $2 كصديق {{SITENAME}} ، بسعر $3 ! N !! N! فريق {{SITENAME}}",
+	"invite-view-body": "مرحبًا !! N !! N! كتب صديقك ، $1 ، مقالًا جديدًا على {{SITENAME}} ، ويريد منك التحقق من ذلك !! N !! N! انقر هنا لعرضه:! N !! N ! $5 ! N !! N! ولا تنس إضافة $2 كصديق {{SITENAME}} ، بسعر $3 ! N !! N! فريق {{SITENAME}}",
+	"invite-friend-to-edit": "قم بدعوة صديق للتعديل",
+	"invite-friend-to-read": "ادعُ صديقًا للقراءة"
 }
