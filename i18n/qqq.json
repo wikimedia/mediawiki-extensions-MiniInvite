@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Amire80"
+		]
 	},
 	"invite-desc": "{{desc|name=MiniInvite|url=https://www.mediawiki.org/wiki/Extension:MiniInvite}}",
 	"invite-subject": "Subject line of the main/default invitation email message. Its body text will be {{msg-mw|invite-body}}.\nParameters:\n* $1 is either the real name, or if not supplied, then the user name of the person who sent out the invitation email",
@@ -10,7 +12,7 @@
 	"invite-message": "Informational text shown on Special:InviteEmail which explains the purpose of the special page to the user reading the text",
 	"invite-skip-step": "Link text of a link on Special:InviteEmail; said link is visible only when the URL parameter <code>from</code> has the value <code>register</code>...but nothing seems to set it (as of August 2020)? Peculiar.",
 	"invite-sent": "Success message shown on Special:InviteEmail after invitation emails have been sent out",
-	"invite-back-to-userpage": "Button text shown on Special:InviteEmail after invitation emails have been sent out; clicking on this button takes the user back to their user page",
+	"invite-back-to-userpage": "Button text shown on Special:InviteEmail after invitation emails have been sent out; clicking on this button takes the user back to their user page.\n\nIn right to left languages, use <code>&amp;gt;</code>.",
 	"invite-sent-thanks": "Success message shown on Special:InviteEmail after invitation emails have been sent out",
 	"invite-more-friends": "Button text of a button shown on Special:InviteEmail after invitation emails have been sent out; clicking on the button takes the user back to Special:InviteEmail so that they can send out more invitation emails to their friends",
 	"invite-your-friends": "Page title of Special:InviteEmail",
