@@ -268,7 +268,7 @@ class InviteEmail extends UnlistedSpecialPage {
 						'</textarea>
 					</p>
 					<div class="email-buttons">
-						<input type="submit" class="site-button" onclick="document.email.submit()" value="' .
+						<input type="submit" class="site-button" value="' .
 							$this->msg( 'invite-customize-send' )->escaped() . '" />
 					</div>
 				</div>
