@@ -1,17 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
+	"invite-desc": "[[Special:InviteEmail|Een speciale pagina om uw vrienden uit te nodigen om deel te nemen aan de wiki]]",
+	"invite-subject": "$1 wil dat u deelneemt aan {{SITENAME}}!",
+	"invite-body": "Hallo!\n\nUw vriend, $1, wil dat u zich aansluit bij {{SITENAME}}! Bekijk het eens op http://{{SERVERNAME}}\n\nOm mee te doen klikt u op deze link en meldt u zich aan!\n$4\n\nHet team van {{SITENAME}}",
+	"invite-email-anon-text": "Gelieve u [[Special:UserLogin|aan te melden]] om uitnodigings-e-mails te versturen.",
 	"invite-not-logged-in": "Niet aangemeld",
+	"invite-message": "{{SITENAME}} is leuker met uw vrienden erbij. Nodig uw vrienden uit om deel te nemen aan {{SITENAME}}. Voer e-mailadressen en een uitnodigingsbericht in en klik op “{{int:invite-customize-send}}”, zo simpel is het.",
 	"invite-skip-step": "Deze stap overslaan",
-	"invite-sent": "Uw uitnodigin is verstuurd!",
+	"invite-sent": "Uw uitnodiging is verstuurd!",
 	"invite-back-to-userpage": "&lt; Terug naar uw gebruikerspagina",
+	"invite-sent-thanks": "Bedankt dat u anderen over {{SITENAME}} hebt verteld!",
 	"invite-more-friends": "Meer vrienden uitnodigen",
+	"invite-your-friends": "Uw vrienden uitnodigen",
+	"invite-enter-emails": "Voer e-mailadressen in",
+	"invite-comma-separated": "(meerdere adressen van elkaar scheiden met komma’s)",
+	"invite-customize-email": "Pas uw e-mail aan",
 	"invite-customize-subject": "Onderwerp",
 	"invite-customize-body": "E-mailtekst",
 	"invite-customize-send": "E-mail verzenden",
+	"invite-share-article": "Deel uw artikel met uw vrienden!",
+	"invite-send-new-article-to-friends": "Geweldig. Maar een artikel moet ook gelezen worden! Deel uw artikel met uw vrienden. Klik hieronder!",
 	"invite-my-friends": "Mijn vrienden uitnodigen",
-	"invite-no-thanks": "Nee, bedankt"
+	"invite-no-thanks": "Liever niet",
+	"invite-invalid-page": "De opgegeven paginanaam is ongeldig, of er is geen paginanaam opgegeven.",
+	"invite-rate-subject": "$1 wil dat u $2 beoordeelt op {{SITENAME}}",
+	"invite-edit-subject": "$1 wil dat u $2 bewerkt op {{SITENAME}}",
+	"invite-view-subject": "$1 wil dat u *$2* leest op {{SITENAME}}",
+	"invite-edit-body": "Hallo!\n\nUw vriend, $1, vraagt om uw hulp bij het bewerken van $4 op {{SITENAME}}.\n\nKlik hier om te bewerken:\n\n$5 \n\nEn vergeet niet $2 toe te voegen als uw vriend op {{SITENAME}}, via $3\n\nHet team van {{SITENAME}}",
+	"invite-rate-body": "Hallo!\n\nUw vriend, $1, wil dat u $4 beoordeelt op {{SITENAME}}.\n\nKlik hier om te beoordelen:\n\n$5 \n\nEn vergeet niet $2 toe te voegen als uw vriend op {{SITENAME}}, via $3 \n\nHet team van {{SITENAME}}",
+	"invite-view-body": "Hallo!\n\nUw vriend, $1, heeft zojuist een nieuw artikel geschreven op {{SITENAME}} en wil dat u het leest!\n\nKlik hier om het te bekijken:\n\n$5\n\nEn vergeet niet $2 toe te voegen als uw vriend op {{SITENAME}}, via $3 \n\nHet team van {{SITENAME}}",
+	"invite-friend-to-edit": "Een vriend uitnodigen om te bewerken",
+	"invite-friend-to-read": "Een vriend uitnodigen om te lezen"
 }
