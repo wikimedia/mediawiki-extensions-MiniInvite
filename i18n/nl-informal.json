@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Een speciale pagina om jouw vrienden uit te nodigen om deel te nemen aan de wiki]]",
+	"invite-subject": "$1 wil dat je deelneemt aan {{SITENAME}}!",
+	"invite-body": "Hallo!\n\nJouw vriend, $1, wil dat je je aansluit bij {{SITENAME}}! Bekijk het eens op http://{{SERVERNAME}}\n\nOm mee te doen klik je op deze link en meld je je aan!\n$4\n\nHet team van {{SITENAME}}",
+	"invite-email-anon-text": "[[Special:UserLogin|Meld je aan]] om uitnodigings-e-mails te versturen.",
+	"invite-message": "{{SITENAME}} is leuker met je vrienden erbij. Nodig je vrienden uit om mee te doen met {{SITENAME}}. Voer e-mailadressen en een uitnodigingsbericht in en klik op “{{int:invite-customize-send}}”, zo simpel is het.",
+	"invite-sent": "Je uitnodiging is verstuurd!",
+	"invite-back-to-userpage": "&lt; Terug naar je gebruikerspagina",
+	"invite-sent-thanks": "Bedankt dat je anderen over {{SITENAME}} hebt verteld!",
+	"invite-your-friends": "Jouw vrienden uitnodigen",
+	"invite-customize-email": "Pas je e-mail aan",
+	"invite-share-article": "Deel je artikel met je vrienden!",
+	"invite-send-new-article-to-friends": "Netjes. Maar nu moet het ook nog gelezen worden! Deel je artikel met je vrienden. Klik hieronder!",
+	"invite-no-thanks": "Laat maar",
+	"invite-rate-subject": "$1 wil dat je $2 beoordeelt op {{SITENAME}}",
+	"invite-edit-subject": "$1 wil dat je $2 bewerkt op {{SITENAME}}",
+	"invite-view-subject": "$1 wil dat je *$2* leest op {{SITENAME}}",
+	"invite-edit-body": "Hallo!\n\nJouw vriend, $1, vraagt om jouw hulp bij het bewerken van $4 op {{SITENAME}}.\n\nKlik hier om te bewerken:\n\n$5 \n\nEn vergeet niet $2 toe te voegen als jouw vriend op {{SITENAME}}, via $3\n\nHet team van {{SITENAME}}",
+	"invite-rate-body": "Hallo!\n\nJouw vriend, $1, wil dat je $4 beoordeelt op {{SITENAME}}.\n\nKlik hier om te beoordelen:\n\n$5 \n\nEn vergeet niet $2 toe te voegen als jouw vriend op {{SITENAME}}, via $3 \n\nHet team van {{SITENAME}}",
+	"invite-view-body": "Hallo!\n\nJouw vriend, $1, heeft zojuist een nieuw artikel geschreven op {{SITENAME}} en wil dat ke het leest!\n\nKlik hier om het te bekijken:\n\n$5\n\nEn vergeet niet $2 toe te voegen als jouw vriend op {{SITENAME}}, via $3 \n\nHet team van {{SITENAME}}"
+}
