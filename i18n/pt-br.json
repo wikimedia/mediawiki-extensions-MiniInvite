@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Fúlvio"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|Uma página especial para convidar seus amigos para participarem da wiki]]",
 	"invite-subject": "$1 quer que você participe em {{SITENAME}}!",
+	"invite-body": "Olá!\n\nSeu/ua amigo/a, $1, quer que você participe de {{SITENAME}}! Confira em http://{{SERVERNAME}}\n\nPara participar, basta clicar neste link e se inscrever!\n$4\n\nA equipe de {{SITENAME}}",
 	"invite-email-anon-text": "Por favor [[Special:UserLogin|entre]] para enviar e-mails de convite.",
 	"invite-not-logged-in": "Não está entrado",
 	"invite-message": "{{SITENAME}} é mais divertido com seus amigos. Convide seus amigos para participar da {{SITENAME}} simplesmente inserindo endereços de e-mail e uma mensagem de convite e clicando em \"{{int:invite-customize-send}}\"",
@@ -30,6 +32,9 @@
 	"invite-rate-subject": "$1 quer que você avalie $2 em {{SITENAME}}",
 	"invite-edit-subject": "$1 quer que você edite $2 em {{SITENAME}}!",
 	"invite-view-subject": "$1 quer que você leia *$2* em {{SITENAME}}",
+	"invite-edit-body": "Olá!\n\nSeu/ua amigo/a, $1, quer sua ajuda para editar $4 em {{SITENAME}}.\n\nClique aqui para editar:\n\n$5\n\nE não se esqueça de adicionar $2 como seu/ua amigo/a de {{SITENAME}}, em $3\n\nA equipe de {{SITENAME}}",
+	"invite-rate-body": "Olá!\n\nSeu/ua amigo/a, $1, quer que você avalie $4 em {{SITENAME}}.\n\nClique aqui para avaliar:\n\n$5\n\nE não se esqueça de adicionar $2 como seu/ua amigo/a de {{SITENAME}}, em $3\n\nA equipe de {{SITENAME}}",
+	"invite-view-body": "Olá!\n\nSeu/ua amigo/a, $1, acabou de escrever um novo artigo em {{SITENAME}} e quer que você dê uma olhada!\n\nClique aqui para ver:\n\n$5\n\nE não se esqueça de adicionar $2 como seu/ua amigo/a de {{SITENAME}}, em $3\n\nA equipe de {{SITENAME}}",
 	"invite-friend-to-edit": "Convide um amigo para editar",
 	"invite-friend-to-read": "Convide um amigo para ler"
 }
