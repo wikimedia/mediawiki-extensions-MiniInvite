@@ -193,7 +193,7 @@ class MiniInviteHooks {
 			$_SESSION['new_opinion'] = 0;
 		}
 
-		if ( !empty( $s ) ) {
+		if ( $s ) {
 			$out->addModules( 'ext.miniInvite.DisplayInviteLinks.js' );
 			$out->addModuleStyles( 'ext.miniInvite.inviteLinks.css' );
 			// Output the HTML. addHTML() places it at the very beginning of the
