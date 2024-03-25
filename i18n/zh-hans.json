@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Googology",
 			"StarrySky",
 			"沈澄心"
 		]
@@ -10,6 +11,7 @@
 	"invite-not-logged-in": "未登录",
 	"invite-skip-step": "跳过此步",
 	"invite-more-friends": "邀请更多朋友",
+	"invite-comma-separated": "（多个地址用逗号分隔）",
 	"invite-customize-send": "发送电子邮件",
 	"invite-share-article": "与朋友分享您的条目！",
 	"invite-my-friends": "邀请我的朋友",

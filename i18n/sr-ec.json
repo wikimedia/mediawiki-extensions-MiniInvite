@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kizule"
+			"Kizule",
+			"Milicevic01"
 		]
 	},
 	"invite-not-logged-in": "Нисте пријављени",
 	"invite-skip-step": "Прескочи овај корак",
+	"invite-comma-separated": "(за више адреса раздвајте их зарезом)",
 	"invite-customize-subject": "Тема",
 	"invite-no-thanks": "Не, хвала"
 }
