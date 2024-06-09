@@ -1,46 +1,8 @@
 /** Invite Box **/
-.invite-email-sent {
-	color: #285C98;
-	font-size: 11px;
-	width: 200px;
-	float: left;
-	padding: 4px 4px 10px 4px;
-	margin: 0px 10px 10px 0px;
-}
-
 .invite-message {
 	color: #666666;
 	font-size: 1.1em;
 	margin: 5px 0px 5px 0px;
-}
-
-.invite-left {
-	float: left;
-	border: 1px solid #DCDCDC;
-	width: 500px;
-	padding: 10px;
-	margin: 0px 10px 0px 0px;
-}
-
-.invite-right {
-	float: left;
-	border: 1px solid #DCDCDC;
-	width: 250px;
-	padding: 5px 5px 10px 5px;
-	text-align: center;
-	height: 149px;
-}
-
-.invite-right h1 {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #666666;
-}
-
-.invite-right-image {
-	float: left;
-	text-align: center;
-	margin: 0px 0px 0px 48px !important;
 }
 
 .invite-links {
@@ -50,30 +12,6 @@
 
 .invite-links a {
 	text-decoration: none;
-}
-
-.invite-icons {
-	margin: 10px 0px 10px 0px;
-	width: 500px;
-}
-
-.invite-form {
-	width: 500px;
-}
-
-.invite-form-title {
-	float: left;
-	width: 200px;
-	margin: 0px 0px 11px 0px;
-	color: #285C98;
-	font-weight: 800;
-	font-size: 12px;
-}
-
-.invite-form-input {
-	float: left;
-	margin: 0px 0px 11px 0px;
-	width: 300px;
 }
 
 .invite-form-button {
@@ -147,58 +85,6 @@ div.invite-skip-link {
 
 div.invite-skip-link a {
 	font-size: 10px;
-}
-
-/** Contact List **/
-.contacts {
-	max-height: 300px;
-	overflow-x: hidden;
-	overflow-y: auto;
-	border: 1px solid #DCDCDC;
-}
-
-.contacts-title-row {
-	background-color: #DCDCDC;
-}
-
-.contacts-title {
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	width: 300px;
-}
-
-.contacts-message {
-	padding: 0px 0px 10px 0px;
-}
-
-.contacts-row {
-	margin: 10px 0px 0px 0px;
-	padding: 0px 0px 10px 0px;
-	border-bottom: 1px solid #DCDCDC;
-}
-
-.contacts-checkbox {
-	float: left;
-	width: 75px;
-}
-
-.contacts-cell {
-	float: left;
-	width: 300px;
-}
-
-.contacts-loading {
-	padding: 5px;
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #285C98;
-	text-align: center;
-}
-
-.invite-email-text {
-	border: 1px solid #DCDCDC;
-	background-color: #F2F2F2;
 }
 
 /**
