@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Class for tracking email invitations
  */
@@ -34,7 +37,7 @@ class UserEmailTrack {
 	 */
 	public function track_email( $type, $count, $page_title = '' ) {
 		if ( $this->user->isRegistered() ) {
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			$dbw->insert(
 				'user_email_track',
 				[
