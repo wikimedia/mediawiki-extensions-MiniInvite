@@ -3,13 +3,14 @@
 		"authors": [
 			"Alshamiri1",
 			"LaMagiaaa",
+			"Meno25",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"invite-desc": "[[Special: InviteEmail | صفحة خاصة لدعوة أصدقائك للانضمام إلى wiki]]",
 	"invite-subject": "يريد $1 أن تنضم إلى {{SITENAME}}!",
 	"invite-body": "مرحبًا !! N !! N! صديقك ، $1 ، يريدك أن تنضم إلى {{SITENAME}}! تحقق من ذلك على http: // {{SERVERNAME}}! N !! N! للانضمام ، ما عليك سوى النقر فوق هذا الارتباط والاشتراك !! N! $4 ! N !! N! فريق {{SITENAME}}",
-	"invite-email-anon-text": "يرجى [[Special: UserLogin | تسجيل الدخول]] لإرسال رسائل البريد الإلكتروني للدعوة.",
+	"invite-email-anon-text": "يرجى [[Special:UserLogin|تسجيل الدخول]] لإرسال رسائل البريد الإلكتروني للدعوة.",
 	"invite-not-logged-in": "غير مسجل الدخول",
 	"invite-message": "{{SITENAME}} أكثر إمتاعًا مع أصدقائك. قم بدعوة أصدقائك للانضمام إلى {{SITENAME}} عن طريق إدخال عناوين البريد الإلكتروني ورسالة الدعوة والنقر على \"{{int: calling-custom-send}}\"",
 	"invite-skip-step": "تخطي هذه الخطوة",
