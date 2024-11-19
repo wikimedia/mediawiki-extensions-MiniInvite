@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਵਿਕੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਸੱਦਾ ਦੇਣ ਲਈ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਵਰਕਾ]]",
+	"invite-subject": "$1 ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹੈ ਕਿ ਤੁਸੀਂ {{SITENAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ!",
+	"invite-body": "ਕਿਦਾਂ!\n\nਤੁਹਾਡਾ ਦੋਸਤ, $1 , ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹੈ ਕਿ ਤੁਸੀਂ {{SITENAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ! ਇਸ ਨੂੰ http://{{SERVERNAME}} 'ਤੇ ਵੇਖੋ\n\nਸ਼ਾਮਲ ਹੋਣ ਲਈ, ਬੱਸ ਇਸ ਕੜੀ 'ਤੇ ਬਟਨ ਨੂੰ ਦੱਬੋ ਅਤੇ ਖਾਤਾ ਬਣਾਓ!\n $4 \n\nਜੁੱਟ {{SITENAME}}",
+	"invite-email-anon-text": "ਸੱਦਾ ਈਮੇਲ ਭੇਜਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ [[Special:UserLogin|ਦਾਖਲ ਹੋਵੋ]]।",
+	"invite-not-logged-in": "ਦਾਖ਼ਲ ਨਹੀਂ ਹੋ",
+	"invite-message": "{{SITENAME}} ਤੁਹਾਡੇ ਦੋਸਤਾਂ ਨਾਲ ਵਧੇਰੇ ਮਜ਼ੇਦਾਰ ਹੈ। ਸਿਰਫ਼ ਈਮੇਲ ਪਤੇ ਅਤੇ ਇੱਕ ਸੱਦਾ ਸੁਨੇਹਾ ਦਰਜ ਕਰਨ ਮਗਰੋ \"{{int:invite-customize-send}}\" 'ਤੇ ਬਟਨ ਨੂੰ ਦੱਬ ਕੇ ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ {{SITE NAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਸੱਦਾ ਦਿਓ।",
+	"invite-sent": "ਤੁਹਾਡਾ ਸੱਦਾ ਭੇਜਿਆ ਗਿਆ ਹੈ!",
+	"invite-back-to-userpage": "&lt; ਆਪਣੇ ਵਰਤੋਂਕਾਰ ਸਫ਼ੇ ਉੱਤੇ ਵਾਪਸ ਜਾਓ",
+	"invite-sent-thanks": "{{SITENAME}} ਬਾਰੇ ਗੱਲ ਫੈਲਾਉਣ ਲਈ ਧੰਨਵਾਦ!",
+	"invite-more-friends": "ਹੋਰ ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+	"invite-your-friends": "ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+	"invite-enter-emails": "ਈਮੇਲ ਦਾਖਲ ਕਰੋ",
+	"invite-customize-subject": "ਵਿਸ਼ਾ",
+	"invite-customize-send": "ਈਮੇਲ ਘੱਲੋ",
+	"invite-share-article": "ਆਪਣੇ ਲੇਖ ਨੂੰ ਆਪਣੇ ਦੋਸਤਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ!",
+	"invite-send-new-article-to-friends": "ਸ਼ਾਨਦਾਰ।  ਹੁਣ, ਆਓ ਤੁਹਾਨੂੰ ਕੁਝ ਪਡ਼੍ਹ ਨੂੰ ਦਿੰਦੇ ਹਾਂ! ਆਪਣੇ ਲੇਖ ਨੂੰ ਆਪਣੇ ਦੋਸਤਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ। ਬਸ ਹੇਠਾਂ ਬਟਨ ਨੂੰ ਦੱਬੋ!",
+	"invite-my-friends": "ਮੇਰੇ ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+	"invite-no-thanks": "ਨਹੀਂ ਧੰਨਵਾਦ",
+	"invite-invalid-page": "ਜਾਂ ਤਾਂ ਦਿੱਤਾ ਗਿਆ ਸਫ਼ੇ ਦਾ ਨਾਂ ਗਲਤ ਸੀ, ਜਾਂ ਕੋਈ ਸਫ਼ੇ ਦਾ ਨਾਂ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ ਸੀ।",
+	"invite-edit-subject": "$1 ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹੈ ਕਿ ਤੁਸੀਂ $2 'ਤੇ {{SITENAME}} ਦਾ ਸੋਧ ਕਰੋ"
+}
