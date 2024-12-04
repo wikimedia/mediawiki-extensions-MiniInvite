@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cabal"
+			"Cabal",
+			"Matma Rex"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਵਿਕੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਸੱਦਾ ਦੇਣ ਲਈ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਵਰਕਾ]]",
@@ -9,7 +10,7 @@
 	"invite-body": "ਕਿਦਾਂ!\n\nਤੁਹਾਡਾ ਦੋਸਤ, $1 , ਚਾਹੁੰਦਾ/ਚਾਹੁੰਦੀ ਹੈ ਕਿ ਤੁਸੀਂ {{SITENAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ! ਇਸ ਨੂੰ http://{{SERVERNAME}} 'ਤੇ ਵੇਖੋ\n\nਸ਼ਾਮਲ ਹੋਣ ਲਈ, ਬੱਸ ਇਸ ਕੜੀ 'ਤੇ ਬਟਨ ਨੂੰ ਦੱਬੋ ਅਤੇ ਖਾਤਾ ਬਣਾਓ!\n $4 \n\nਜੁੱਟ {{SITENAME}}",
 	"invite-email-anon-text": "ਸੱਦਾ ਈਮੇਲ ਭੇਜਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ [[Special:UserLogin|ਦਾਖਲ ਹੋਵੋ]]।",
 	"invite-not-logged-in": "ਦਾਖ਼ਲ ਨਹੀਂ ਹੋ",
-	"invite-message": "{{SITENAME}} ਤੁਹਾਡੇ ਦੋਸਤਾਂ ਨਾਲ ਵਧੇਰੇ ਮਜ਼ੇਦਾਰ ਹੈ। ਸਿਰਫ਼ ਈਮੇਲ ਪਤੇ ਅਤੇ ਇੱਕ ਸੱਦਾ ਸੁਨੇਹਾ ਦਰਜ ਕਰਨ ਮਗਰੋ \"{{int:invite-customize-send}}\" 'ਤੇ ਬਟਨ ਨੂੰ ਦੱਬ ਕੇ ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ {{SITE NAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਸੱਦਾ ਦਿਓ।",
+	"invite-message": "{{SITENAME}} ਤੁਹਾਡੇ ਦੋਸਤਾਂ ਨਾਲ ਵਧੇਰੇ ਮਜ਼ੇਦਾਰ ਹੈ। ਸਿਰਫ਼ ਈਮੇਲ ਪਤੇ ਅਤੇ ਇੱਕ ਸੱਦਾ ਸੁਨੇਹਾ ਦਰਜ ਕਰਨ ਮਗਰੋ \"{{int:invite-customize-send}}\" 'ਤੇ ਬਟਨ ਨੂੰ ਦੱਬ ਕੇ ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ {{SITENAME}} ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਸੱਦਾ ਦਿਓ।",
 	"invite-sent": "ਤੁਹਾਡਾ ਸੱਦਾ ਭੇਜਿਆ ਗਿਆ ਹੈ!",
 	"invite-back-to-userpage": "&lt; ਆਪਣੇ ਵਰਤੋਂਕਾਰ ਸਫ਼ੇ ਉੱਤੇ ਵਾਪਸ ਜਾਓ",
 	"invite-sent-thanks": "{{SITENAME}} ਬਾਰੇ ਗੱਲ ਫੈਲਾਉਣ ਲਈ ਧੰਨਵਾਦ!",
