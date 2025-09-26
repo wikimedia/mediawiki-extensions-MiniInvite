@@ -1,5 +1,10 @@
 <?php
 
+use MediaWiki\Parser\Sanitizer;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
+use MediaWiki\Title\Title;
+
 class InviteEmail extends UnlistedSpecialPage {
 
 	/**
@@ -200,7 +205,7 @@ class InviteEmail extends UnlistedSpecialPage {
 				break;
 			default:
 				$this->track = 3;
-				$register = SpecialPage::getTitleFor( 'Userlogin', 'signup' );
+				$register = SpecialPage::getTitleFor( 'CreateAccount' );
 				$user_title = Title::makeTitle( NS_USER, $user->getName() );
 				$email['subject'] = $this->msg( 'invite-subject', $user_label )->text();
 

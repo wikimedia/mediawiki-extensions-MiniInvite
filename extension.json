@@ -1,6 +1,6 @@
 {
 	"name": "MiniInvite",
-	"version": "2.5.0",
+	"version": "2.6.0",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -12,10 +12,13 @@
 	"type": "specialpage",
 	"callback": "MiniInviteHooks::registerExtension",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"config": {
-		"SendNewArticleToFriends": false
+		"SendNewArticleToFriends": {
+			"description": "If set to true and the BlogPage extension is installed, the user will be prompted to send the newly created blog page via email to their friends after they've created a page in the blog namespace defined by the BlogPage extension.",
+			"value": false
+		}
 	},
 	"SpecialPages": {
 		"EmailNewArticle": "EmailNewArticle",
@@ -40,7 +43,8 @@
 		"OutputPageBeforeHTML": [
 			"MiniInviteHooks::inviteRedirect",
 			"MiniInviteHooks::displayInviteLinks"
-		]
+		],
+		"PageSaveComplete": "MiniInviteHooks::inviteFriendToEdit"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
@@ -60,5 +64,5 @@
 			"scripts": "resources/js/DisplayInviteLinks.js"
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
