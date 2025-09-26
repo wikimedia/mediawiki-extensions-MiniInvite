@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 
 /**
  * Class for tracking email invitations
@@ -15,7 +16,7 @@ class UserEmailTrack {
 	/**
 	 * Constructor
 	 *
-	 * @param User $user
+	 * @param MediaWiki\User\User $user
 	 */
 	public function __construct( User $user ) {
 		$this->user = $user;

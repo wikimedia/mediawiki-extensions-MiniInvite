@@ -1,7 +1,8 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
-use MediaWiki\Revision\RevisionRecord;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserIdentity;
 
 class MiniInviteHooks {
@@ -11,16 +12,10 @@ class MiniInviteHooks {
 	 * extension.json, obviously, because JSON is not PHP
 	 */
 	public static function registerExtension() {
-		global $wgEmailFrom, $wgPasswordSender, $wgHooks;
+		global $wgEmailFrom, $wgPasswordSender;
+
 		// The email address where invite emails are sent out from
 		$wgEmailFrom = $wgPasswordSender;
-		if ( class_exists( MediaWiki\HookContainer\HookContainer::class ) ) {
-			// MW 1.35+
-			$wgHooks['PageSaveComplete'][] = 'MiniInviteHooks::inviteFriendToEdit';
-		} else {
-			$wgHooks['PageContentSaveComplete'][] = 'MiniInviteHooks::inviteFriendToEditOld';
-			$wgHooks['PageContentInsertComplete'][] = 'MiniInviteHooks::createOpinionCheck';
-		}
 	}
 
 	/**
@@ -61,69 +56,10 @@ class MiniInviteHooks {
 	}
 
 	/**
-	 * PageContentSaveComplete hook handler
-	 *
-	 * @param WikiPage $wikiPage
-	 * @param User $user
-	 * @param Content $content
-	 * @param string $summary
-	 * @param bool $isMinor
-	 * @param null $isWatch
-	 * @param null $section
-	 * @param int $flags
-	 * @param RevisionRecord $revision
-	 * @param Status $status
-	 * @param int|bool $baseRevId
-	 *
-	 * @return bool
-	 */
-	public static function inviteFriendToEditOld( WikiPage $wikiPage, $user, $content, $summary, $isMinor, $isWatch, $section, $flags, RevisionRecord $revision, $status, $baseRevId ) {
-		if ( !( $flags & EDIT_NEW ) ) {
-			// Increment edits for this page by one (for this user's session)
-			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
-			$page_edits_views = $edits_views[$wikiPage->getID()] ?? 0;
-			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
-
-			$_SESSION['edits_views'] = $edits_views;
-		}
-		return true;
-	}
-
-	/**
-	 * If the user just created a new page in the NS_BLOG namespace (defined by the
-	 * BlogPage extension) and $wgSendNewArticleToFriends is set to true, this
-	 * function sets the $_SESSION['new_opinion'] flag to the name of the new Blog:
-	 * page.
-	 *
-	 * inviteRedirect() below then redirects the user to Special:EmailNewArticle/<name of the new Blog: page>,
-	 * which allows the user to advertise their new page to their friends via email.
-	 * @param WikiPage $wikiPage
-	 * @param User $user
-	 * @param Content $content
-	 * @param string $summary
-	 * @param bool $isMinor
-	 * @param null $isWatch
-	 * @param null $section
-	 * @param int $flags
-	 * @param RevisionRecord $revision
-	 */
-	public static function createOpinionCheck( $wikiPage, User $user, $content, $summary, $isMinor, $isWatch, $section, $flags, RevisionRecord $revision ) {
-		global $wgSendNewArticleToFriends;
-
-		if ( $wgSendNewArticleToFriends ) {
-			$title = $wikiPage->getTitle();
-			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
-			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
-				$_SESSION['new_opinion'] = $title->getPrefixedText();
-			}
-		}
-	}
-
-	/**
-	 * @param OutputPage &$out
+	 * @param MediaWiki\Output\OutputPage &$out
 	 * @param string &$text
 	 */
-	public static function inviteRedirect( OutputPage &$out, &$text ) {
+	public static function inviteRedirect( MediaWiki\Output\OutputPage &$out, &$text ) {
 		global $wgSendNewArticleToFriends;
 		if ( $wgSendNewArticleToFriends ) {
 			if ( isset( $_SESSION['new_opinion'] ) ) {
@@ -134,7 +70,7 @@ class MiniInviteHooks {
 		}
 	}
 
-	public static function displayInviteLinks( OutputPage &$out, &$text ) {
+	public static function displayInviteLinks( MediaWiki\Output\OutputPage &$out, &$text ) {
 		$t = $out->getTitle();
 		// We need a WikiPage in order to get the page ID
 		if ( !$t->canExist() ) {

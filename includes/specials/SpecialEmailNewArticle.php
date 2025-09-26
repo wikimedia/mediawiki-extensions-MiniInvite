@@ -1,5 +1,9 @@
 <?php
 
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
+use MediaWiki\Title\Title;
+
 class EmailNewArticle extends UnlistedSpecialPage {
 
 	/**
