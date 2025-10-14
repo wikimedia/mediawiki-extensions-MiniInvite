@@ -23,7 +23,7 @@ class MiniInviteHooks {
 	 *
 	 * If the user just created a new page in the NS_BLOG namespace (defined by the
 	 * BlogPage extension) and $wgSendNewArticleToFriends is set to true, this
-	 * function sets the $_SESSION['new_opinion'] flag to the name of the new Blog:
+	 * function sets the session-specific 'new_opinion' flag to the name of the new Blog:
 	 * page.
 	 *
 	 * inviteRedirect() below then redirects the user to Special:EmailNewArticle/<name of the new Blog: page>,
@@ -39,18 +39,19 @@ class MiniInviteHooks {
 
 		if ( !( $flags & EDIT_NEW ) ) {
 			// Increment edits for this page by one (for this user's session)
-			$edits_views = ( $_SESSION['edits_views'] ?? [ $wikiPage->getID() => 0 ] );
+			$session = RequestContext::getMain()->getRequest()->getSession();
+			$edits_views = ( $session->get( 'edits_views' ) ?? [ $wikiPage->getID() => 0 ] );
 			$page_edits_views = $edits_views[$wikiPage->getID()] ?? 0;
 			$edits_views[$wikiPage->getID()] = ( $page_edits_views + 1 );
 
-			$_SESSION['edits_views'] = $edits_views;
+			$session->set( 'edits_views', $edits_views );
 		}
 
 		if ( $wgSendNewArticleToFriends ) {
 			$title = $wikiPage->getTitle();
 			// @phan-suppress-next-line PhanTypeMismatchArgumentNullable
 			if ( defined( 'NS_BLOG' ) && $title->inNamespace( NS_BLOG ) ) {
-				$_SESSION['new_opinion'] = $title->getPrefixedText();
+				RequestContext::getMain()->getRequest()->getSession()->set( 'new_opinion', $title->getPrefixedText() );
 			}
 		}
 	}
@@ -61,11 +62,15 @@ class MiniInviteHooks {
 	 */
 	public static function inviteRedirect( MediaWiki\Output\OutputPage &$out, &$text ) {
 		global $wgSendNewArticleToFriends;
+
 		if ( $wgSendNewArticleToFriends ) {
-			if ( isset( $_SESSION['new_opinion'] ) ) {
+			$session = $out->getRequest()->getSession();
+			$newOpinion = $session->get( 'new_opinion' );
+
+			if ( $newOpinion !== null ) {
 				$invite = SpecialPage::getTitleFor( 'EmailNewArticle' );
-				$out->redirect( $invite->getFullURL( [ 'page' => $_SESSION['new_opinion'] ] ) );
-				unset( $_SESSION['new_opinion'] );
+				$out->redirect( $invite->getFullURL( [ 'page' => $newOpinion ] ) );
+				$session->set( 'new_opinion', null );
 			}
 		}
 	}
@@ -77,7 +82,8 @@ class MiniInviteHooks {
 			return true;
 		}
 
-		if ( !isset( $_SESSION['edits_views'] ) ) {
+		$session = $out->getRequest()->getSession();
+		if ( $session->get( 'edits_views' ) === null ) {
 			// To avoid "undefined <whatever variable/offset/etc.>" bullshit
 			return true;
 		}
@@ -92,7 +98,7 @@ class MiniInviteHooks {
 			return true;
 		}
 
-		$edits_views = $_SESSION['edits_views'];
+		$edits_views = $session->get( 'edits_views' );
 		// page ID is not set when creating a new page (obviously), so using $t->getID()
 		// directly as-is can result in an E_NOTICE about undefined offsets on the
 		// $page_edits_views variable definition line below
@@ -112,12 +118,13 @@ class MiniInviteHooks {
 			);
 			$s .= '</span>';
 			$edits_views[$t->getArticleID()] = $page_edits_views + 1;
-			$_SESSION['edits_views'] = $edits_views;
+			$session->set( 'edits_views', $edits_views );
 		}
 
 		// This was originally commented out, but I have no idea why...
 		// Oh, maybe it conflicts with wfInviteRedirect()? Not sure, @todo CHECKME
-		if ( isset( $_SESSION['new_opinion'] ) && $_SESSION['new_opinion'] == 1 ) {
+		$newOpinion = $session->get( 'new_opinion' );
+		if ( $newOpinion !== null && $newOpinion == 1 ) {
 			$s .= '<span id="invite_to_read" class="edit">';
 			$s .= $linkRenderer->makeKnownLink(
 				$invite_title,
@@ -126,7 +133,7 @@ class MiniInviteHooks {
 				[ 'email_type' => 'view', 'page' => $t->getText() ]
 			);
 			$s .= '</span>';
-			$_SESSION['new_opinion'] = 0;
+			$session->set( 'new_opinion', 0 );
 		}
 
 		if ( $s ) {

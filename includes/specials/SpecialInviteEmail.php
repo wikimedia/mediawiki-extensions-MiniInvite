@@ -47,6 +47,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 		$out = $this->getOutput();
 		$request = $this->getRequest();
+		$session = $request->getSession();
 		$user = $this->getUser();
 
 		// Check blocks
@@ -67,8 +68,9 @@ class InviteEmail extends UnlistedSpecialPage {
 			$this->from = $wgPasswordSender;
 		}
 
-		if ( $request->wasPosted() && $_SESSION['alreadysubmitted'] == false ) {
-			$_SESSION['alreadysubmitted'] = true;
+		if ( $request->wasPosted() && $session->get( 'alreadysubmitted' ) == false ) {
+			$session->set( 'alreadysubmitted', true );
+
 			$message = $request->getVal( 'body' );
 			$subject = $request->getVal( 'subject' );
 			$addresses = explode( ',', $request->getVal( 'email_to' ) );
@@ -127,7 +129,7 @@ class InviteEmail extends UnlistedSpecialPage {
 
 			$out->addHTML( $html );
 		} else {
-			$_SESSION['alreadysubmitted'] = false;
+			$session->set( 'alreadysubmitted', false );
 			$out->addHTML( $this->displayForm() );
 		}
 	}
