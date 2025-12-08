@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Unha páxina especial para convidar as túas amizades a unirse ao wiki]]",
+	"invite-subject": "$1 quere que te unas a {{SITENAME}}!",
+	"invite-body": "Ola!\n\nA túa amizade, $1, quere que te unas a {{SITENAME}}! Bótalle unha ollada en http://{{SERVERNAME}}\n\nPara unirte, só tes que premer nesta ligazón e rexistrarte!\n$4\n\nO equipo de {{SITENAME}}",
+	"invite-email-anon-text": "[[Special:UserLogin|Inicia sesión]] para enviar correos electrónicos de invitación.",
+	"invite-not-logged-in": "Non iniciaches sesión",
+	"invite-message": "{{SITENAME}} é máis divertido coas túas amizades. Convida as túas amizades a unirse a {{SITENAME}} simplemente introducindo os seus enderezos de correo electrónico xunto cunha mensaxe de invitación e facendo clic en «{{int:invite-customize-send}}».",
+	"invite-skip-step": "Omitir este paso",
+	"invite-sent": "Enviouse a túa invitación!",
+	"invite-back-to-userpage": "&lt; Volver á túa páxina de usuario",
+	"invite-sent-thanks": "Grazas por difundires {{SITENAME}}!",
+	"invite-more-friends": "Convidar máis amizades",
+	"invite-your-friends": "Convidar as túas amizades",
+	"invite-enter-emails": "Introduce os correos electrónicos",
+	"invite-customize-email": "Personaliza a túa mensaxe",
+	"invite-customize-subject": "Asunto",
+	"invite-customize-body": "Corpo do correo electrónico",
+	"invite-customize-send": "Enviar os correos electrónicos",
+	"invite-share-article": "Comparte o teu artigo coas túas amizades!",
+	"invite-send-new-article-to-friends": "Xenial. Agora, imos conseguir algunhas lecturas! Comparte o teu artigo coas túas amizades. Só tes que facer clic a continuación!",
+	"invite-my-friends": "Convidar as miñas amizades",
+	"invite-no-thanks": "Non, grazas",
+	"invite-invalid-page": "Ou ben o nome de páxina proporcionado non era válido, ou ben non se proporcionou ningún nome de páxina.",
+	"invite-rate-subject": "$1 quere que valores «$2» en {{SITENAME}}",
+	"invite-edit-subject": "$1 quere que edites «$2» en {{SITENAME}}",
+	"invite-view-subject": "$1 quere que leas *$2* en {{SITENAME}}",
+	"invite-edit-body": "Ola!\n\nA túa amizade, $1, quere a túa axuda para editar «$4» en {{SITENAME}}.\n\nFai clic aquí para editar:\n\n$5\n\nE non esquezas engadir a $2 como a túa amizade en {{SITENAME}}, en $3.\n\nO equipo de {{SITENAME}}",
+	"invite-rate-body": "Ola!\n\nA túa amizade, $1, quere que valores «$4» en {{SITENAME}}.\n\nFai clic aquí para valorar:\n\n$5\n\nE non esquezas engadir a $2 como a túa amizade en {{SITENAME}}, en $3.\n\nO equipo de {{SITENAME}}",
+	"invite-view-body": "Ola!\n\nA túa amizade, $1, acaba de escribir un artigo novo en {{SITENAME}} e quere que lle botes unha ollada.\n\nFai clic aquí para velo:\n\n$5\n\nE non esquezas engadir a $2 como a túa amizade en {{SITENAME}}, en $3.\n\nO equipo de {{SITENAME}}",
+	"invite-friend-to-edit": "Convidar a un amigo a editar",
+	"invite-friend-to-read": "Convida a un amigo a ler"
+}
