@@ -3,17 +3,39 @@
 		"authors": [
 			"Googology",
 			"StarrySky",
-			"沈澄心"
+			"沈澄心",
+			"Peterxy12"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|邀请好友加入wiki的特殊页面]]",
 	"invite-subject": "$1想让您加入{{SITENAME}}!",
+	"invite-body": "您好！\n\n您的朋友，$1，想要邀请您加入{{SITENAME}}！请连到 http://{{SERVERNAME}}瞧瞧\n\n想要加入的话，只需要点击此链接并注册！\n$4\n\n{{SITENAME}}团队",
+	"invite-email-anon-text": "请[[Special:UserLogin|登录]]来发送邀请电子邮件。",
 	"invite-not-logged-in": "未登录",
+	"invite-message": "与您的朋友一起利用{{SITENAME}}会更有趣。通过简单的输入电子邮件地址、发送信息、与点击“{{int:invite-customize-send}}”的步骤，来邀请您的朋友加入{{SITENAME}}",
 	"invite-skip-step": "跳过此步",
+	"invite-sent": "您的邀请已发送！",
+	"invite-back-to-userpage": "&lt;返回到您的用户页",
+	"invite-sent-thanks": "感谢您推广关于{{SITENAME}}的消息！",
 	"invite-more-friends": "邀请更多朋友",
+	"invite-your-friends": "邀请您的朋友",
+	"invite-enter-emails": "输入电子邮件",
 	"invite-comma-separated": "（多个地址用逗号分隔）",
+	"invite-customize-email": "自定义您的电子邮件",
+	"invite-customize-subject": "主题",
+	"invite-customize-body": "邮件正文",
 	"invite-customize-send": "发送电子邮件",
 	"invite-share-article": "与朋友分享您的条目！",
+	"invite-send-new-article-to-friends": "好极了，现在让我们来读些东西！与您的朋友分享您的条目，只需要在下方点击！",
 	"invite-my-friends": "邀请我的朋友",
-	"invite-no-thanks": "不用了，谢谢"
+	"invite-no-thanks": "不用了，谢谢",
+	"invite-invalid-page": "提供的页面名称无效，或者没有提供页面名称。",
+	"invite-rate-subject": "$1想要请您评审在{{SITENAME}}上的$2",
+	"invite-edit-subject": "$1想要请您编辑在{{SITENAME}}上的$2",
+	"invite-view-subject": "$1想要请您阅读在{{SITENAME}}上的*$2*",
+	"invite-edit-body": "嗨！\n\n您的朋友，$1，想要您协助编辑在{{SITENAME}}上的$4。\n\n请在此点击来进行编辑：\n\n$5\n\n另外不要忘了在$3将$2加入为您的{{SITENAME}}朋友\n\n{{SITENAME}}团队",
+	"invite-rate-body": "嗨！\n\n您的朋友，$1，想要您评审在{{SITENAME}}上的$4。\n\n请在此点击来进行评审：\n\n$5\n\n另外不要忘了在$3将$2加入为您的{{SITENAME}}朋友\n\n{{SITENAME}}团队",
+	"invite-view-body": "嗨！\n\n您的朋友，$1，刚刚在{{SITENAME}}上写了一个新条目，并想要请您看一看。\n\n请在此点击来视图：\n\n$5\n\n另外不要忘了在$3将$2加入为您的{{SITENAME}}朋友\n\n{{SITENAME}}团队",
+	"invite-friend-to-edit": "邀请朋友来编辑",
+	"invite-friend-to-read": "邀请朋友来阅读"
 }
