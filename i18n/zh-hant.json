@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kly"
+			"Kly",
+			"Peterxy12"
 		]
 	},
-	"invite-desc": "[[Special:InviteEmail|邀請您的朋友來加入 wiki 的特殊頁面]]",
+	"invite-desc": "[[Special:InviteEmail|邀請您的朋友來加入 wiki的特殊頁面]]",
 	"invite-subject": "$1想請您加入{{SITENAME}}！",
-	"invite-body": "您好！\n\n您的朋友，$1，想要邀請您加入{{SITENAME}}！請連到 http://{{SERVERNAME}} 瞧瞧\n\n想要加入的話，只需要點擊此連結並註冊！\n$4\n\n{{SITENAME}}團隊",
+	"invite-body": "您好！\n\n您的朋友，$1，想要邀請您加入{{SITENAME}}！請連到http://{{SERVERNAME}}瞧瞧\n\n想要加入的話，只需要點擊此連結並註冊！\n$4\n\n{{SITENAME}}團隊",
 	"invite-email-anon-text": "請[[Special:UserLogin|登入]]來傳送邀請電子郵件。",
 	"invite-not-logged-in": "未登入",
 	"invite-message": "與您的朋友一起利用{{SITENAME}}會更有趣。透過簡單的輸入電子郵件位址、發送訊息、與點擊「{{int:invite-customize-send}}」的步驟，來邀請您的朋友加入{{SITENAME}}",
@@ -18,7 +19,7 @@
 	"invite-your-friends": "邀請您的朋友",
 	"invite-enter-emails": "輸入電子郵件",
 	"invite-comma-separated": "（用逗號區分多個郵件位址）",
-	"invite-customize-email": "自定義您的電子郵件",
+	"invite-customize-email": "自訂您的電子郵件",
 	"invite-customize-subject": "標題",
 	"invite-customize-body": "郵件正文",
 	"invite-customize-send": "傳送電子郵件",
