@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"invite-desc": "[[Special:InviteEmail|Een speciale pagina om uw vrienden uit te nodigen om deel te nemen aan de wiki]]",
 	"invite-subject": "$1 wil dat u deelneemt aan {{SITENAME}}!",
-	"invite-body": "Hallo!\n\nUw vriend, $1, wil dat u zich aansluit bij {{SITENAME}}! Bekijk het eens op http://{{SERVERNAME}}\n\nOm mee te doen klikt u op deze link en meldt u zich aan!\n$4\n\nHet team van {{SITENAME}}",
+	"invite-body": "Hallo!\n\nUw vriend, $1, wil dat u zich aansluit bij {{SITENAME}}! Bekijk het eens op http://{{SERVERNAME}}\n\nOm mee te doen klikt u op deze koppeling en meldt u zich aan!\n$4\n\nHet team van {{SITENAME}}",
 	"invite-email-anon-text": "Gelieve u [[Special:UserLogin|aan te melden]] om uitnodigings-e-mails te versturen.",
 	"invite-not-logged-in": "Niet aangemeld",
 	"invite-message": "{{SITENAME}} is leuker met uw vrienden erbij. Nodig uw vrienden uit om deel te nemen aan {{SITENAME}}. Voer e-mailadressen en een uitnodigingsbericht in en klik op “{{int:invite-customize-send}}”, zo simpel is het.",
