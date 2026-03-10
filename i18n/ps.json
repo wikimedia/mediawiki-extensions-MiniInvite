@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|يو ځانگړی مخ چې تاسو پکې خپل ملگري ويکي سره يوځای‌کېدو ته رابللی شئ]]",
+	"invite-subject": "$1 غواړي چې تاسو له {{SITENAME}} سره يوځای شئ!",
+	"invite-body": "سلام! \n\nستاسو ملگری، $1، غواړي چې تاسو له {{SITENAME}} سر يوځای شئ! دا په http\n://{{SERVERNAME}} کې وگورئ\n\nد يوځای‌کېدو لپاره يوازې دا تړونی کېکاږئ او نوم‌ليکنه وکړئ!\n$4\n\nد {{SERVERNAME}} ډله",
+	"invite-email-anon-text": "د بلنې برېښليکونو لېږلو لپاره مهرباني وکړئ [[Special:UserLogin|غونډال ته ننوځئ]].",
+	"invite-not-logged-in": "ننوتي نه ياست",
+	"invite-message": "{{SITENAME}} له خپلو ملگرو سره لا په‌زړه‌پورې کړئ. خپل ملگري {{SITENAME}} سره يوځای‌کېدو ته راوبلئ، ډېر ساده دی ، يوازې برېښليکونه دننه کړئ او بلنې پيغامونه وليکئ او \"{{int:invite-customize-send}}\" کېکاږئ",
+	"invite-skip-step": "دا گام پرېږدئ",
+	"invite-sent": "ستاسو بلنه ولېږل شوه!",
+	"invite-back-to-userpage": "&lt; بېرته خپل کارن مخ ته",
+	"invite-sent-thanks": "د {{SITENAME}} په اړه مو له خبر خپرولو مننه!",
+	"invite-more-friends": "نور ملگري رابلل",
+	"invite-your-friends": "خپل ملگري رابلل",
+	"invite-enter-emails": "برېښليکونه دننه‌کول",
+	"invite-comma-separated": "(څو پتو لپاره کامې سره جلا شوی)",
+	"invite-customize-email": "خپل برېښليک دوديزول",
+	"invite-customize-subject": "سکالو",
+	"invite-customize-body": "د برېښليک جوسه",
+	"invite-customize-send": "برېښليک لېږل",
+	"invite-share-article": "خپله ليکنه له ملگرو سره شريکول",
+	"invite-send-new-article-to-friends": "ډېرښه. اوس راځئ چې تاسو ته څه لوستل درکړو! خپله ليکنه مو له ملگرو سره شريکه کړئ.\nيوازې لاندې کېکاږئ!",
+	"invite-my-friends": "زما ملگري رابلل",
+	"invite-no-thanks": "نه مننه",
+	"invite-invalid-page": "يا خو ورکړل شوی مخ نوم ناسمو، يا خو هېڅ مخ نوم نه و، ورکړل شوی.",
+	"invite-rate-subject": "$1 غواړي چې تاسو په {{SITENAME}} کې $2 وارزوئ",
+	"invite-edit-subject": "$1 غواړي چې تاسو په {{SITENAME}} کې $2 سم کړئ",
+	"invite-view-subject": "$1 غواړي چې تاسو په {{SITENAME}} کې *$2* ولولئ",
+	"invite-edit-body": "سلام!\n\nستاسو ملگری، $1، غواړي چې تاسو په {{SITENAME}} کې د $4 سمولو کې مرسته وکړئ.\n\nسمولو لپاره دا ځای کېکاږئ:\n\n$5\n\nاو په $3 کې $2 د خپل {{SITENAME}} ملگري په توگه ورگډول مو هېر نه شي\n\nد {{SITENAME}} ډله کې",
+	"invite-rate-body": "سلام!\n\nستاسو ملگری، $1، غواړي چې تاسو په {{SITENAME}} کې د $4 ارزونه وکړئ.\n\nسمولو لپاره دا ځای کېکاږئ:\n\n$5\n\nاو په $3 کې $2 د خپل {{SITENAME}} ملگري په توگه ورگډول مو هېر نه شي\n\nد {{SITENAME}} ډله",
+	"invite-view-body": "سلام!\n\nستاسو ملگری، $1، په {{SITENAME}} کې يوه نوې ليکنه کړې او غواړي چې تاسو يې سم‌کتنه وکړئ!\n\nکتلو لپاره دا ځای کېکاږئ:\n\n$5\n\nاو په $3 کې $2 د خپل {{SITENAME}} ملگري په توگه ورگډول مو هېر نه شي\n\nد {{SITENAME}} ډله",
+	"invite-friend-to-edit": "سمون لپاره يو ملگری رابلل",
+	"invite-friend-to-read": "لوستلو لپاره يو ملگری رابلل"
+}
