@@ -1,13 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
+	"invite-desc": "[[Special:InviteEmail|친구를 위키에 참가하도록 초대하는 특수 문서]]",
+	"invite-subject": "$1님은 당신이 {{SITENAME}}에 참가하길 원합니다!",
+	"invite-body": "안녕하세요!\n\n당신의 친구, $1님은 당신이 {{SITENAME}}에 참가하길 원합니다! http://{{SERVERNAME}}에서 확인해 보세요\n\n참가하려면 이 링크를 클릭하고 가입하세요!\n$4 \n\n{{SITENAME}} 팀",
+	"invite-email-anon-text": "초대 이메일을 보내려면 [[Special:UserLogin|로그인]]해 주세요.",
 	"invite-not-logged-in": "로그인하지 않음",
+	"invite-message": "{{SITENAME}}은 친구들과 함께하면 더욱 즐겁습니다. 이메일 주소와 초대 메시지를 입력하고 \"{{int:invite-customize-send}}\"를 클릭해서 친구들을 {{SITENAME}}에 초대하세요",
 	"invite-skip-step": "이 단계 건너뛰기",
 	"invite-sent": "초대장을 보냈습니다!",
 	"invite-back-to-userpage": "&lt; 내 사용자 문서로 돌아가기",
+	"invite-sent-thanks": "{{SITENAME}}의 이름을 널리 퍼트려 주셔서 감사합니다!",
 	"invite-more-friends": "더 많은 친구 초대",
 	"invite-your-friends": "내 친구 초대",
 	"invite-enter-emails": "이메일 입력",
@@ -16,10 +23,17 @@
 	"invite-customize-subject": "제목",
 	"invite-customize-body": "이메일 본문",
 	"invite-customize-send": "이메일 보내기",
+	"invite-share-article": "친구들과 문서를 공유하세요!",
+	"invite-send-new-article-to-friends": "정말 멋지네요. 이제 읽을만한 것을 가져오겠습니다! 이 문서를 친구들에게 공유하세요. 아래를 클릭하세요!",
 	"invite-my-friends": "내 친구 초대",
 	"invite-no-thanks": "괜찮습니다",
+	"invite-invalid-page": "제공된 문서 이름이 유효하지 않거나 문서 이름이 제공되지 않았습니다.",
+	"invite-rate-subject": "$1님은 당신이 {{SITENAME}}의 $2 문서를 평가해 주길 원합니다",
 	"invite-edit-subject": "$1님은 당신이 {{SITENAME}}의 $2 문서를 편집해 주길 원합니다",
-	"invite-view-body": "안녕하십니까!\n\n당신의 친구 $1님이 방금 {{SITENAME}}에 새 문서를 작성하였으며 당신이 확인해주길 원하고 있습니다!\n\n보려면 여기를 누르십시오:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마십시오\n\n{{SITENAME}} 팀",
+	"invite-view-subject": "$1님은 당신이 {{SITENAME}}의 *$2* 문서를 읽어주길 원합니다",
+	"invite-edit-body": "안녕하세요!\n\n당신의 친구 $1님이 {{SITENAME}}의 $4 문서를 편집해 주길 원합니다.\n\n편집하려면 여기를 누르세요:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마세요\n\n{{SITENAME}} 팀",
+	"invite-rate-body": "안녕하세요!\n\n당신의 친구 $1님이 {{SITENAME}}의 $4 문서를 평가해 주길 원합니다.\n\n평가하려면 여기를 누르세요:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마세요\n\n{{SITENAME}} 팀",
+	"invite-view-body": "안녕하세요!\n\n당신의 친구 $1님이 방금 {{SITENAME}}에 새 문서를 작성하였으며 당신이 확인해주길 원하고 있습니다!\n\n보려면 여기를 누르세요:\n\n$5\n\n{{SITENAME}}의 친구로 $3에 $2님을 추가하는 것을 잊지 마세요\n\n{{SITENAME}} 팀",
 	"invite-friend-to-edit": "편집을 위해 친구 초대",
 	"invite-friend-to-read": "읽기를 위해 친구 초대"
 }
