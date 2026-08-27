@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"invite-desc": "[[Special:InviteEmail|Bog gaar ah oo aad saaxiibbadaa ugu casuumi karto inay ku soo biiraan wiki-ga]]",
+	"invite-subject": "$1 wuxuu rabaa inaad ku soo biirto {{SITENAME}}!",
+	"invite-body": "Haye!\n\nSaaxiibkaa, $1, wuxuu rabaa inaad ku soo biirto {{SITENAME}}! Ka eeg http://{{SERVERNAME}}\n\nSi aad ugu soo biirto, kaliya guji xiriirkan oo isdiiwaangeli!\n$4\n\nKooxda {{SITENAME}}",
+	"invite-email-anon-text": "Fadlan [[Special:UserLogin|gal]] si aad u dirto iimayllada casuumaadda.",
+	"invite-not-logged-in": "Ma soo galin",
+	"invite-message": "{{SITENAME}} wuxuu ka sii xiiso badan yahay marka ay saaxiibbadaa kula joogaan. Ku casuum saaxiibbadaa inay ku soo biiraan {{SITENAME}} adigoo si fudud u gelinaya cinwaanada iimaylka iyo farriin casuumaad ah, kadibna gujinaya \"{{int:invite-customize-send}}\"",
+	"invite-skip-step": "Ka bood tallaabadan",
+	"invite-sent": "Casuumaaddaada waa la diray!",
+	"invite-back-to-userpage": "&lt; Ku noqo boggaaga isticmaalaha",
+	"invite-sent-thanks": "Waad ku mahadsan tahay faafinta warka ku saabsan {{SITENAME}}!",
+	"invite-more-friends": "Casuumo saaxiibo badan",
+	"invite-your-friends": "Casuumo saaxiibbadaa",
+	"invite-enter-emails": "Geli iimaylada",
+	"invite-comma-separated": "(comma ku kala saar cinwaanno badan)",
+	"invite-customize-email": "Habee iimaylkaaga",
+	"invite-customize-subject": "Mawduuc",
+	"invite-customize-body": "Jirka iimaylka",
+	"invite-customize-send": "Dir iimayl",
+	"invite-share-article": "La wadaag maqaalkaga saaxiibbadaa!",
+	"invite-send-new-article-to-friends": "Wanaagsan. Hadda, aan kuu helno wax aad akhrido! La wadaag maqaalkaga saaxiibbadaa. Kaliya guji hoos!",
+	"invite-my-friends": "Casuumo saaxiibbaday",
+	"invite-no-thanks": "Maya mahadsanid",
+	"invite-invalid-page": "Magaca bogga la bixiyay ma saxna, ama magaca bogga lama bixin.",
+	"invite-rate-subject": "$1 wuxuu kaa rabaa inaad qiimayso $2 ee {{SITENAME}}",
+	"invite-edit-subject": "$1 wuxuu kaa rabaa inaad wax ka beddesho $2 ee {{SITENAME}}",
+	"invite-view-subject": "$1 wuxuu kaa rabaa inaad akhrido *$2* ee {{SITENAME}}",
+	"invite-edit-body": "Salaan!\n\nSaaxiibkaa, $1, wuxuu kaa rabaa inaad ka caawiso wax ka beddelka $4 ee {{SITENAME}}.\n\nHalkan guji si aad wax uga beddesho:\n\n$5\n\nHa illoobin inaad $2 ku darto saaxiibkaa {{SITENAME}} ahaan, ee ah $3\n\nKooxda {{SITENAME}}",
+	"invite-rate-body": "Salaan!\n\nSaaxiibkaa, $1, wuxuu kaa rabaa inaad qiimayso $4 ee {{SITENAME}}.\n\nHalkan guji si aad u qiimayso:\n\n$5\n\nHa illoobin inaad $2 ku darto saaxiibkaa {{SITENAME}} ahaan, ee ah $3\n\nKooxda {{SITENAME}}",
+	"invite-view-body": "Salaan!\n\nSaaxiibkaa, $1, ayaa hadda maqaal cusub ku qoray {{SITENAME}}, wuxuuna rabaa inaad eegto!\n\nHalkan guji si aad u aragto:\n\n$5\n\nHa illoobin inaad $2 ku darto saaxiibkaa {{SITENAME}} ahaan, ee ah $3\n\nKooxda {{SITENAME}}",
+	"invite-friend-to-edit": "Casuumo saaxiib si uu wax uga beddelo",
+	"invite-friend-to-read": "Casuumo saaxiib si uu u akhriyo"
+}
